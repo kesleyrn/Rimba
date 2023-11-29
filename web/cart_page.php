@@ -59,7 +59,7 @@ foreach ($_SESSION['cart'] as $productId) {
 }
 ?>
 
-<!-- Your cart HTML structure goes here like proceed paymet -->
+<!-- Your cart HTML structure goes here like proceed payment -->
 
 <?php
 include "../web/footer.php"; // Include your footer file
