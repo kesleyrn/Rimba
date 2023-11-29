@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+    line-height: 1.5;
+    font-family: 'poppins',sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Robot,'sans-serif;
+}
+   /* for this page only */
+   .alb{
+    width:230px;
+    height:350px;
+    padding:5px;
+    display:inline-block;
+    background: rgb(236, 236, 236);
+    border-radius: 8px;
+    margin-left: 15px;
+
+}
+
+.alb img{
+    width:99%;
+    height:65%;
+    border-radius:6px;
+    margin-top: 5px;
+    
+}
+.alb p{
+    font-size:14px;
+    color: black;
+  
+}
+.wel{
+    padding-left:15px;
+    padding-right:15px;
+   
+}
+.alb a{
+  text-decoration:none;
+}
+.btn1,.btn2{
+width:100px;
+height:30px;
+cursor:pointer;
+border-radius:5px;
+}
+.btn1{
+    background-color: rgb(99, 107, 107);
+    color: whitesmoke;
+}
+.btn2{
+    background-color:rgb(219, 188, 15);
+    color: black;
+}
+.webimg img{
+   width:98%;
+   height:50vh;
+   margin-left: 10px;
+   margin-bottom: 10px;
+   border-radius: 2px;
+}

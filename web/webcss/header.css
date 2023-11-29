@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+    line-height: 1.5;
+    font-family: 'poppins',sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Robot,'sans-serif;
+}
+
+/** menu 1 session**/
+.menu{
+    height: 20px;
+    background-color:black;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    margin-right:50px ;
+   
+}
+nav ul li img{
+    
+   height: 20px;
+   margin-right:0px;
+   margin-left: 5px;
+}
+nav ul li p{
+    display: inline-block;
+    color: white;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    font-family: 'poppins',sans-serif;
+    
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.navbar form{
+   margin-left: 5px;
+
+}
+.navbar .search input{
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    
+}
+
+.search{
+max-width: 400px;
+display: flex;
+margin-right: 40px;
+}
+.yes{
+    
+    margin: auto;
+    width: 70%;
+    /**border: 3px solid green;**/
+    padding: 30px;
+   
+    
+}
+.yes ul ol{
+    display: inline;
+    margin-left: 60px;
+    
+    
+   
+   
+}
+.yes ul ol a{
+    text-decoration: none;
+    color: black;
+}
+
+
+  /* Style The Dropdown Button */
+  .dropbtn {
+   
+    color: black;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+ 
+
