@@ -39,7 +39,7 @@ foreach ($_SESSION['cart'] as $productId) {
         // Display product details here (customize this according to your HTML structure)
         echo '<div class="cart-item">';
         echo '<img src="../uploads/' . $productDetails['image_url'] . '">';
-        echo '<p>Brand: ' . $productDetails['Cname'] . '</p>';
+        echo '<p>Brand: ' . $productDetails['Cname'] . ' </p>';
         echo '<p>Gender: ' . $productDetails['Gender'] . '</p>';
         echo '<p>Product Name: ' . $productDetails['Product_name'] . '</p>';
         echo '<p>Price: ' . $productDetails['Amount'] . ' FRW</p>';
@@ -48,7 +48,7 @@ foreach ($_SESSION['cart'] as $productId) {
         // Add a form with a remove button for each item
         echo '<form method="post" action="remove_item.php">';
         echo '<input type="hidden" name="product_id" value="' . $productId . '">';
-        echo '<button type="submit" name="remove_item">Remove Item</button><br><br>';
+        echo '<button type="submit" name="remove_item" class="btn3">Remove Item</button>';
         echo '</form>';
 
         echo '</div>';
