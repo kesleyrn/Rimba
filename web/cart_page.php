@@ -58,9 +58,8 @@ foreach ($_SESSION['cart'] as $productId) {
         echo '<input type="hidden" name="product_id" value="' . $productId . '">';
         echo '<button type="submit" name="remove_item" class="btn3">Remove Item</button>';
         echo '</form>';
+        
         echo '</div>';
-
-        // echo '</div>';
         echo '</div>';
     }
 }
