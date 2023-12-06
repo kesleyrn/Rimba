@@ -38,11 +38,19 @@ foreach ($_SESSION['cart'] as $productId) {
     if ($productDetails) {
         // Display product details here (customize this according to your HTML structure)
         echo '<div class="cart-item">';
+
+        echo '<div class="row">';
+        echo '<div class="cart-col">';
         echo '<img src="../uploads/' . $productDetails['image_url'] . '">';
+        echo '</div>';
+        
+        echo '<div class="cart-col">';
         echo '<p>Brand: ' . $productDetails['Cname'] . ' </p>';
         echo '<p>Gender: ' . $productDetails['Gender'] . '</p>';
         echo '<p>Product Name: ' . $productDetails['Product_name'] . '</p>';
         echo '<p>Price: ' . $productDetails['Amount'] . ' FRW</p>';
+
+      
         // Display more product details as needed
 
         // Add a form with a remove button for each item
@@ -50,7 +58,9 @@ foreach ($_SESSION['cart'] as $productId) {
         echo '<input type="hidden" name="product_id" value="' . $productId . '">';
         echo '<button type="submit" name="remove_item" class="btn3">Remove Item</button>';
         echo '</form>';
+        echo '</div>';
 
+        echo '</div>';
         echo '</div>';
     }
 }
