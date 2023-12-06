@@ -60,7 +60,7 @@ foreach ($_SESSION['cart'] as $productId) {
         echo '</form>';
         echo '</div>';
 
-        echo '</div>';
+        // echo '</div>';
         echo '</div>';
     }
 }
