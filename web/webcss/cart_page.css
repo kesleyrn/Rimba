@@ -2,6 +2,7 @@
 body{
     line-height: 1.5;
     font-family: 'poppins',sans-serif;
+  
 }
 
 *{
@@ -12,7 +13,7 @@ body{
 }
 
    /* for this page only */
-   .alb{
+   .cart-item{
     width:230px;
     height:350px;
     padding:5px;
@@ -23,24 +24,20 @@ body{
 
 }
 
-.alb img{
+.cart-item img{
     width:99%;
     height:65%;
     border-radius:6px;
     margin-top: 5px;
     
 }
-.alb p{
+.cart-item p{
     font-size:12px;
     color: black;
   
 }
-.wel{
-    padding-left:15px;
-    padding-right:15px;
-   
-}
-.alb a{
+
+.cart-item a{
   text-decoration:none;
 }
 .btn1,.btn2{

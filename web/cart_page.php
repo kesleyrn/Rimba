@@ -25,7 +25,8 @@ if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rimba</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="webcss/cart_page.css">
+
 </head>
 <body>
 <?php
