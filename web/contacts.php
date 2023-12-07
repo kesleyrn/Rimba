@@ -8,6 +8,14 @@ include "header.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rimba</title>
     <link rel="stylesheet" href="webcss/contact.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+               emailjs.init("JEke8Pncrhz6FKrPM");
+            })();
+         </script>
+
 </head>
 <body>
   <!------------------contact -------------------->
@@ -31,11 +39,11 @@ include "header.php";
 
             <div class="contact-right">
                 <h2>Message Us</h2>
-                <form method="post" class="send">
-                    <input type="text" name="Name" placeholder="Enter your name" reqired>
-                    <input type="email" name="Email" placeholder="Enter your Email" reqired>
-                    <textarea name="Message" rows="6" placeholder="Enter your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                <form class="send">
+                    <input type="text"  id="Name" placeholder="Enter your name" reqired>
+                    <input type="email"  id="Email" placeholder="Enter your Email" reqired>
+                    <textarea id="Message" rows="6" placeholder="Enter your Message"></textarea>
+                    <button type="submit" class="btn btn2" onclick="sendMail()">Submit</button>
                 </form>
 
             </div>
@@ -44,6 +52,7 @@ include "header.php";
     </div>
   
 </div>
+<script src="./script.js"></script>
 </body>
 </html>
 <?php

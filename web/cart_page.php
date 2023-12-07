@@ -40,10 +40,8 @@ foreach ($_SESSION['cart'] as $productId) {
         echo '<div class="cart-item">';
 
         echo '<div class="row">';
-        echo '<div class="cart-col">';
+      
         echo '<img src="../uploads/' . $productDetails['image_url'] . '">';
-        echo '</div>';
-        
         echo '<div class="cart-col">';
         echo '<p>Brand: ' . $productDetails['Cname'] . ' </p>';
         echo '<p>Gender: ' . $productDetails['Gender'] . '</p>';
