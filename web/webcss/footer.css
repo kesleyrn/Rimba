@@ -35,14 +35,14 @@
         margin-bottom: 20px;
         font-weight: 500;
         position: relative;
-        background-color: rgb(219, 188, 15);
+
     }
 
     .footer-col h4::before{
         content: '';
         position: absolute;
         left: 0;
-        bottom: -10px;
+        bottom: -6px;
         background-color: #e91e63;
         height: 2px;
         box-sizing: border-box;

@@ -28,7 +28,7 @@
         </nav>
         <form class="search" action="search.php" method="POST">
                 <input type="search" name="search" placeholder="search anything" > 
-                <button type="submit" name="submit"><img src="../images/search_icon.svg"></button>
+                <button type="submit" name="submit"><img class="Search_icon" src="../images/search_icon.svg" style="background: white;"></button>
         </form>
         
     </div>

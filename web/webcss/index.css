@@ -2,6 +2,7 @@
 body{
     line-height: 1.5;
     font-family: 'poppins',sans-serif;
+    margin: auto;
 }
 
 *{
@@ -10,16 +11,21 @@ body{
     box-sizing: border-box;
     font-family:'Robot,'sans-serif;
 }
+.main_container{
+    flex-direction: row;
+    display: flex;
+}
 
    /* for this page only */
    .alb{
     width:230px;
     height:350px;
-    padding:5px;
+    padding:10px;
     display:inline-block;
     background: rgb(236, 236, 236);
     border-radius: 8px;
     margin-left: 16px;
+  
 
 }
 
@@ -33,6 +39,7 @@ body{
 .alb p{
     font-size:12px;
     color: black;
+    margin-left: 10px;
   
 }
 .wel{
@@ -43,20 +50,67 @@ body{
 .alb a{
   text-decoration:none;
 }
-.btn1,.btn2{
-width:100px;
-height:30px;
-cursor:pointer;
-border-radius:5px;
+
+.btn{
+    padding: 12px;
+    position: relative;
+    right: 24em;
+    background: #e91e63;
+    border: none;
+    gap: 4px;
+    margin: 3px;
+    color: white;
+    border-radius: 5px;
+    /* position: sticky;
+    bottom: 12px; */
+
 }
-.btn1{
-    background-color: rgb(99, 107, 107);
-    color: whitesmoke;
+
+.btn > a{
+    color: white;
+    text-decoration: none;
 }
+
+
+
+
+
 .btn2{
-    background-color:rgb(219, 188, 15);
-    color: black;
+    padding:8px;
+    background: white;
+    border:none;
+    border-radius:1px;
+    cursor: pointer;
+    font-weight:600;
+    border:1px solid  #e91e63;
+    width:40%;
+
 }
+.btn2:hover{
+    transition:all 0.5s ease-in-out;
+    background:#e91e63;
+    color:white;
+    
+}
+
+.btn1{
+    padding:8px;
+    background: rgba(0, 0, 0, 0.816);
+    color: white;
+    border-radius:1px;
+    cursor: pointer;
+    font-weight:600;
+    border:1px solid  black;
+        width:40%;
+
+}
+.btn1:hover{
+    transition:all 0.5s ease-in-out;
+    background:rgb(255, 254, 254);
+    color:#000000;
+    
+}
+
 .webimg img{
    width:98%;
    height:50vh;

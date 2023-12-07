@@ -8,7 +8,9 @@ include "header.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rimba</title>
-    <link rel="stylesheet" href="webcss/index.css">
+    <link rel="stylesheet" href="./webcss/index.css">
+
+    
 </head>
 <body>
 
@@ -51,7 +53,7 @@ if(mysqli_num_rows($result) > 0){
          
 
             <form method="POST" action="cart_handler.php"> 
-                <input type="hidden" name="product_id" value="<?php echo $row['id']; ?>">
+                <input type="hidden" name="product_id" value="<?php echo $row['id']; ?>">  &nbsp; 
                 <button class="btn1" type="submit" name="buy_now">Buy now</button> &nbsp;
                 <button class="btn2" type="submit" name="add_to_cart">+Cart</button>
                 
