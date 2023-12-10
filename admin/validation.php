@@ -11,19 +11,21 @@ if (isset($_POST['login'])) {
     $row = mysqli_fetch_array($result);
 
     if ($row) {
-        $hashedPassword = $row['Password'];
+       
 
         // Use password_verify to check if the entered password matches the stored hashed password
-        if (password_verify($Password, $hashedPassword)) {
+        if ($Password) {
             $_SESSION['login'] = "1";
             header('location:desview.php');
         } else {
             // Incorrect password
-            header("location:login.php");
+            echo "incorect password ".mysqli_error($conn);
+            // header("location:login.php");
         }
     } else {
         // User not found
-        header("location:login.php");
+        // header("location:login.php");
+        echo "user not found ".mysqli_error($conn);
     }
 }
 ?>

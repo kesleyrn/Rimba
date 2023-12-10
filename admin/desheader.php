@@ -39,6 +39,7 @@ header('location:login.php');
                 <ol><a href="#">Monthly-Report</a></ol>
                 <ol><a href="#">Help-request</a></ol>
                 <ol><a href="#">Contact</a></ol>
+                <ol><a href="signup.php">Sign-user</a></ol>
                 <ol>  
             </ul> 
     </div>

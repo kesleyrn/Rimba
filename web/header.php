@@ -15,9 +15,7 @@
         <nav>
             <ul><b>
                 <li><a href="../admin/login.php">Login</a></li>
-                <li> <p> or</p> <a href="../admin/signup.php">&nbsp; Create account</a></li>
-                <li> 
-                    <a href="cart_page.php"><img src="../images/shopping-cart-32.ico"> Cart:
+                    <a href="cart_page.php"><img class="cart" src="../images/shopping-cart-32.ico"> Cart:
                     <?php
                         include "cart_count.php";
                      ?>

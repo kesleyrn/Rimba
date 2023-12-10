@@ -27,7 +27,103 @@ if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
     <title>Rimba</title>
     <link rel="stylesheet" href="webcss/cart_page.css">
 
-    <style>
+</head>
+<body>
+<div class="main">
+<?php
+$totalAmount = 0;
+// Start table for displaying cart items
+echo '<table class="table">';
+echo '<tr class="tr">';
+echo '<th>Image</th>';
+echo '<th>Details</th>';
+echo '<th>Action</th>';
+echo '</tr>';
+
+// Display cart items and their details in table rows
+foreach ($_SESSION['cart'] as $productId) {
+    $productDetails = getProductDetails($conn, $productId);
+
+    if ($productDetails) {
+        echo '<tr>';
+        echo '<td class="img"><img src="../uploads/' . $productDetails['image_url'] . '" alt="Product Image" style="width: 200px; height: 200px;
+        border-radius:4px;
+        "></td>';
+        
+        // Details column displaying Cname, Gender, Product Name, and Amount
+        echo '<td class="td">';
+        echo '<strong>Brand:</strong> ' . $productDetails['Cname'] . '<br>';
+        echo '<strong>Gender:</strong> ' . $productDetails['Gender'] . '<br>';
+        echo '<strong>Product Name:</strong> ' . $productDetails['Product_name'] . '<br>';
+        echo '<strong>Price:</strong> ' . $productDetails['Amount'] . ' FRW';
+        echo '</td>';
+
+         // Update total amount by adding the price of each product in the cart
+         $totalAmount += $productDetails['Amount'];
+
+        
+        // Add remove item button in a form
+        echo '<td class="td">';
+        echo '<form method="post" action="remove_item.php">';
+        echo '<input type="hidden" name="product_id" value="' . $productId . '">';
+        echo '<button type="submit" name="remove_item" class="btn3">Remove Item</button>';
+        echo '</form>';
+        echo '</td>';      
+        echo '</tr>';
+    }
+}
+
+echo '</table>'; // Close the table
+
+} else {
+    // If the cart is empty, display a message
+    header("location:index.php");
+}
+?>
+
+
+
+
+<div class="aside_section">
+    <div class="card_component">
+        <h1>Cart totals</h1>
+        <hr>
+       <div class="content">
+        <section class="left">
+                <span>Subtotal</span>
+                <span>Shipping</span>
+                <span>Total</span>
+            </section>
+
+            <section class="right">
+                <span>
+                    <?php
+                if ($totalAmount > 0) {
+                        echo " $totalAmount ";
+                    }
+                    ?>FRW
+                </span>
+                <span>Free Delivery</span>
+                <span>  <?php
+                if ($totalAmount > 0) {
+                        echo " $totalAmount ";
+                    }
+                    ?>FRW</span>
+        </section>
+       </div>
+       
+    </div> 
+  <a href="billingdetails.php">  <button class="card_btn">  Procced Payment</button></a>
+</div>
+ 
+</div>
+<?php
+include "../web/footer.php"; // Include your footer file
+?>
+</body>
+</html>
+
+<style>
         table{
             padding: 20px;
             border:none;
@@ -83,7 +179,7 @@ if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
         .card_component{
             display:grid;
             place-items:center;
-            margin:60px 10px ;
+            margin:50px 10px ;
         
         }
 
@@ -129,6 +225,7 @@ if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
             font-size:18px;
             border:1px solid black;
             cursor: pointer;
+           
 
 
 
@@ -140,85 +237,3 @@ if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
             color:#e91e63;
         }
     </style>
-
-</head>
-<body>
-<div class="main">
-<?php
-
-// Start table for displaying cart items
-echo '<table class="table">';
-echo '<tr class="tr">';
-echo '<th>Image</th>';
-echo '<th>Details</th>';
-echo '<th>Action</th>';
-echo '</tr>';
-
-// Display cart items and their details in table rows
-foreach ($_SESSION['cart'] as $productId) {
-    $productDetails = getProductDetails($conn, $productId);
-
-    if ($productDetails) {
-        echo '<tr>';
-        echo '<td class="img"><img src="../uploads/' . $productDetails['image_url'] . '" alt="Product Image" style="width: 200px; height: 200px;
-        border-radius:4px;
-        "></td>';
-        
-        // Details column displaying Cname, Gender, Product Name, and Amount
-        echo '<td class="td">';
-        echo '<strong>Brand:</strong> ' . $productDetails['Cname'] . '<br>';
-        echo '<strong>Gender:</strong> ' . $productDetails['Gender'] . '<br>';
-        echo '<strong>Product Name:</strong> ' . $productDetails['Product_name'] . '<br>';
-        echo '<strong>Price:</strong> ' . $productDetails['Amount'] . ' FRW';
-        echo '</td>';
-        
-        // Add remove item button in a form
-        echo '<td class="td">';
-        echo '<form method="post" action="remove_item.php">';
-        echo '<input type="hidden" name="product_id" value="' . $productId . '">';
-        echo '<button type="submit" name="remove_item" class="btn3">Remove Item</button>';
-        echo '</form>';
-        echo '</td>';      
-        echo '</tr>';
-    }
-}
-
-echo '</table>'; // Close the table
-
-} else {
-    // If the cart is empty, display a message
-    header("location:index.php");
-}
-?>
-
-
-
-
-<div class="aside_section">
-    <div class="card_component">
-        <h1>Cart totals</h1>
-        <hr>
-       <div class="content">
-        <section class="left">
-                <span>Subtotal</span>
-                <span>Shipping</span>
-                <span>Total</span>
-            </section>
-
-            <section class="right">
-                <span>SRWF50,000</span>
-                <span>Free Shipping</span>
-                <span>RWF50,000</span>
-        </section>
-       </div>
-       
-    </div> <br> <br>
-    <button class="card_btn"> Procced Payment</button>
-</div>
- 
-</div>
-<?php
-include "../web/footer.php"; // Include your footer file
-?>
-</body>
-</html>

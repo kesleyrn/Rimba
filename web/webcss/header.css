@@ -34,11 +34,9 @@ nav{
     margin-right:50px ;
    
 }
-nav ul li img{
-    
-   height: 20px;
-   margin-right:0px;
-   margin-left: 5px;
+.cart{
+    width: 15px;
+    height: 15px;
 }
 nav ul li p{
     display: inline-block;

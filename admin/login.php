@@ -16,7 +16,7 @@ include "../connection.php";
         <div id="Login-page">
         
                     <div class="Login-Form">
-                        <h2>Login Here</h2>
+                        <h2>Login Here As Admin</h2>
                         <form method="post" class="contact-form" action="validation.php">
                             User name:
                             <input type="text" name="User_name" placeholder="Enter your User-Name" reqired>
@@ -26,7 +26,7 @@ include "../connection.php";
                             <input type="password" name="Password" placeholder="Enter your Password" reqired>
 
                             <button type="submit" class="btn btn2" name ="login">Login</button>
-                            <a href="signup.php">Create An Account</a>
+                            <a href="../web/index.php">Back to Website</a>
                         </form>
 
                     </div>

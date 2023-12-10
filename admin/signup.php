@@ -9,10 +9,10 @@ if(isset($_POST['submit'])){
     $Password = $_POST['Password'];
 
     // Hash the password
-    $hashedPassword = password_hash($Password, PASSWORD_DEFAULT);
+ 
 
     $sql = "INSERT INTO `users` (Flname, User_name, Email, Telphone, Password) 
-            VALUES ('$Flname', '$User_name', '$Email', '$Telphone', '$hashedPassword')";
+            VALUES ('$Flname', '$User_name', '$Email', '$Telphone', '$Password')";
 
     $result = mysqli_query($conn, $sql);
 
@@ -53,7 +53,7 @@ if(isset($_POST['submit'])){
                             <input type="password" name="Password" placeholder="Enter your Password" reqired>
 
                             <button type="submit" class="btn btn2" name ="submit">Signup</button>
-                            <a href="login.php">Arleady have account</a>
+                            <a href="desview.php">Back-to Dashboard</a></a>
                         </form>
 
                     </div>
