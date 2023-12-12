@@ -51,11 +51,11 @@
                 <label for="street">Street Adress</label> <br>
                     <input type="text"   reqired><br><br>
 
-                <label for="district">District</label> <br><br>
-                    <input type="text"   reqired><br><br>
- 
-                <label for="Phone">Phone Number </label> <br>
-                    <input type="text"   reqired><br><br>
+                    <label for="district">District</label> <br><br>
+                        <input type="text"   reqired><br><br>
+    
+                    <label for="Phone">Phone Number </label> <br>
+                        <input type="text"   reqired><br><br>
 
                 <label for="message">Order Message</label>  <br>
                     <textarea id="Message" rows="6"></textarea><br>
@@ -63,11 +63,12 @@
           
             </form>
 
-            </div>
+         </div>
     </div>
-    <div class="container2">
-                    <button class="btn" type="submit" onclick="openPopup()">Submit</button>
-            
+
+         <button class="btn" type="submit" onclick="openPopup()">Submit</button>
+
+           <div class="container2">
                     <div class="popup" id="popup">
                             <img src="../images/tick.JPG">
                                 <h2>Thank You!</h2> 
@@ -158,6 +159,7 @@
         position:relative;
         align-items:center;
         justify-content:center;
+        bottom:28em;
     }
     .btn{
         padding:10px 60px;
@@ -167,6 +169,8 @@
         cursor:pointer;
         font-size:20px;
         font-weight:300;
+        position:relative;
+        right:-30em;
     }
     .popup{
         width:400px;
