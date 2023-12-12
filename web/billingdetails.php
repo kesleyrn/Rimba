@@ -60,14 +60,34 @@
                 <label for="message">Order Message</label>  <br>
                     <textarea id="Message" rows="6"></textarea><br>
                         
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
+          
+            </form>
 
             </div>
     </div>
+    <div class="container2">
+                    <button class="btn" type="submit" onclick="openPopup()">Submit</button>
+            
+                    <div class="popup" id="popup">
+                            <img src="../images/tick.JPG">
+                                <h2>Thank You!</h2> 
+                                <p>your Details Was Successfully Submitted. Thanks!</p>
+                                <button type="button"  onclick="closePopup()">OK</button>
+                    </div>
+            </div>
 </body>
+<script>
+    let popup = document.getElementById("popup");
+
+    function openPopup(){
+         popup.classList.add("open-popup");
+    }
+    function closePopup(){
+         popup.classList.remove("open-popup");
+    }
+</script>
 <style>
-        body{
+body{
     line-height: 1.5;
     font-family: 'poppins',sans-serif;
     background:whitesmoke;
@@ -137,5 +157,67 @@ textarea{
 button.btn.btn2{
     margin-left:250px;
 }
+
+
+
+    .container2{
+        display:flex;
+        position:relative;
+        align-items:center;
+        justify-content:center;
+    }
+    .btn{
+        padding:10px 60px;
+        background:#fff;
+        border:0;
+        outline:none;
+        cursor:pointer;
+        font-size:22px;
+        font-weight:500px;
+    }
+    .popup{
+        width:400px;
+        background:#fff;
+        border-radius:6px;
+        position:absolute;
+        top:0;
+        left:50%;
+        transform:translate(-50%,-50%) scale(1);
+        text-align:center;
+        padding:0 30px 30px;
+        color:#333;
+        visibility:hidden;
+        transition: transform 0.4s,top 0.4s;
+
+    }
+    .open-popup{
+        visibility:visible;
+        top:50%;
+        transform:translate(-50%,-50%) scale(1);
+    }
+    .popup img {
+        width:80px;
+        margin-top:-50px;
+        border-radius:50%;
+        box-shadow:0 2px 5px rgba(0,0,0,0.2);
+    }
+    .popup h2{
+        font-size:38px;
+        font-weight:500;
+        margin:30px 0 10px ;
+
+    }
+    .popup button{
+        width:100%;
+        margin-top:50px;
+        padding:10px 0;
+        background:#6fd649;
+        border:none;
+        outline:none;
+        font-size:18px;
+        border-radius:4px;
+        cursor:pointer;
+        box-shadow:0 3px 5px rgba(0,0,0,0.2);
+    }
     </style>
 </html>
