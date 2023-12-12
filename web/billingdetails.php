@@ -66,7 +66,6 @@
             </div>
     </div>
 </body>
-
 <style>
         body{
     line-height: 1.5;
@@ -127,11 +126,12 @@ textarea{
     background-color:black;
     color: white;
     text-align:center;
+    border:none;
 }
 .btn2:hover{
     background-color:white;
     color: black;
-    transform: translateY(-5px);
+    transform: translateY(-5px) ;
     border:none;
 }
 button.btn.btn2{
