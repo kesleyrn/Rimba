@@ -88,7 +88,7 @@
 </script>
 <style>
 
-    
+
     body{
         line-height: 1.5;
         font-family: 'poppins',sans-serif;
@@ -162,7 +162,7 @@
     .btn{
         padding:10px 60px;
         background:#fff;
-        border:1px solid black;
+        border:1px solid #e91e63;
         outline:none;
         cursor:pointer;
         font-size:20px;
