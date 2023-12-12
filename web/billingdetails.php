@@ -72,7 +72,7 @@
                             <img src="../images/tick.JPG">
                                 <h2>Thank You!</h2> 
                                 <p>your Details Was Successfully Submitted. Thanks!</p>
-                                <button type="button"  onclick="closePopup()">OK</button>
+                                <button type="button"  onclick="closePopup()">Continue With Payment</button>
                     </div>
             </div>
 </body>
@@ -87,76 +87,69 @@
     }
 </script>
 <style>
-body{
-    line-height: 1.5;
-    font-family: 'poppins',sans-serif;
-    background:whitesmoke;
-}
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family:'Robot,'sans-serif;
-}
-h2{
-    text-align:center;
+    
+    body{
+        line-height: 1.5;
+        font-family: 'poppins',sans-serif;
+        background:whitesmoke;
+    }
 
-}
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family:'Robot,'sans-serif;
+    }
+    h2{
+        text-align:center;
 
-.Billing-Details > form{
-    width: 60%;
-    height: auto;
-    border: 1px solid black;
-    margin:auto;
-    padding:20px;
-    margin-top:20px;
-    margin-bottom:30px;
+    }
 
-}
+    .Billing-Details > form{
+        width: 60%;
+        height: auto;
+        border: 1px solid black;
+        margin:auto;
+        padding:20px;
+        margin-top:20px;
+        margin-bottom:30px;
 
-form > section{
-    display:flex;
-}
-form > input{
-    width: 700px;
-    height:40px;
-    border:1px solid;
-}
-section input{
-    width: 345px;
-    height:40px;
-    border:1px solid;
-}
-.second{
-    padding-left:280px;
-}
-.secnd{
-    padding-left:308px;
-}
-textarea{
-    width: 700px;
-    height:150px;
-}
-.btn2{
-    width:200px;
-    height:40px;
-    margin-top:20px;
-    cursor: pointer;
-    background-color:black;
-    color: white;
-    text-align:center;
-    border:none;
-}
-.btn2:hover{
-    background-color:white;
-    color: black;
-    transform: translateY(-5px) ;
-    border:none;
-}
-button.btn.btn2{
-    margin-left:250px;
-}
+    }
+
+    form > section{
+        display:flex;
+    }
+    form > input{
+        width: 700px;
+        height:40px;
+        border:1px solid;
+    }
+    section input{
+        width: 345px;
+        height:40px;
+        border:1px solid;
+    }
+    .second{
+        padding-left:280px;
+    }
+    .secnd{
+        padding-left:308px;
+    }
+    textarea{
+        width: 700px;
+        height:150px;
+    }
+    .btn:hover{
+        background: rgba(0, 0, 0, 0.816);
+        color:white;
+        transition:all 0.5s ease-in-out;
+        transform: translateY(-5px) ;
+        border:none;
+    }
+    button.btn.btn2{
+        margin-left:250px;
+    }
 
 
 
@@ -169,11 +162,11 @@ button.btn.btn2{
     .btn{
         padding:10px 60px;
         background:#fff;
-        border:0;
+        border:1px solid black;
         outline:none;
         cursor:pointer;
-        font-size:22px;
-        font-weight:500px;
+        font-size:20px;
+        font-weight:300;
     }
     .popup{
         width:400px;
