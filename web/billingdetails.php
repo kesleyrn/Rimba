@@ -59,14 +59,15 @@
 
                 <label for="message">Order Message</label>  <br>
                     <textarea id="Message" rows="6"></textarea><br>
-                        
+
+                <button class="btn" type="button" onclick="openPopup()">Submit</button>    
           
             </form>
 
          </div>
     </div>
 
-         <button class="btn" type="submit" onclick="openPopup()">Submit</button>
+         
 
            <div class="container2">
                     <div class="popup" id="popup">
@@ -144,14 +145,11 @@
     .btn:hover{
         background: rgba(0, 0, 0, 0.816);
         color:white;
-        transition:all 0.5s ease-in-out;
+        transition:all 0.3s ease-in-out;
         transform: translateY(-5px) ;
         border:none;
     }
-    button.btn.btn2{
-        margin-left:250px;
-    }
-
+  
 
 
     .container2{
@@ -170,7 +168,7 @@
         font-size:20px;
         font-weight:300;
         position:relative;
-        right:-30em;
+        left:15em;
     }
     .popup{
         width:400px;
