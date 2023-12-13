@@ -66,7 +66,7 @@
          </div>
     </div>
 
-         <button class="btn" type="submit" onclick="openPopup()">Submit</button>
+         <button class="btn" type="button" onclick="openPopup()">Submit</button>
 
            <div class="container2">
                     <div class="popup" id="popup">
