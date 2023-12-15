@@ -11,54 +11,49 @@
         <h2>Billing-Details</h2>
             <form class="send">
 
-                <label for="Email">Email</label> <br>
-                    <input type="email"  reqired> <br><br>
+                <label for="Email">Email</label> 
+                    <input type="email"  reqired> 
                 
-                    <section>
-                    <label for="Fname">First name</label>
-                    <label for="Lname" class="second">Last name</label> 
-                    </section>
-                        <section>
+                    <div class="name-section">
+                <div class="input-group">
+                    <label for="Fname">First Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="input-group">
+                    <label for="Lname">Last Name</label>
+                    <input type="text" required>
+                </div>
+            </div>
 
-                        
-                                <input type="text"   reqired> &nbsp;&nbsp;
-                     
-                                <input type="text"  reqired>
+                <label for="Company">Company name</label> 
+                    <input type="text"   reqired>
 
-                        </section> <br>
-
-                <label for="Company">Company name</label> <br>
-                    <input type="text"   reqired> <br><br>
-
-                <label for="country">Country / Region</label><br>
-                    <input type="text"  reqired> <br><br>
+                <label for="country">Country / Region</label>
+                    <input type="text"  reqired> 
 
                     
 
-                    <section>
-                    <label for="Sector">Sector</label> 
-                    <label for="Cell" class="secnd">Cell</label> 
-                    </section>
-                        <section>
+                     <div class="contact-section">
+                <div class="input-group">
+                    <label for="Sector">Sector</label>
+                    <input type="text" required>
+                </div>
+                <div class="input-group">
+                    <label for="Cell">Cell</label>
+                    <input type="text" required>
+                </div>
+            </div>
 
-                        
-                                <input type="text"   reqired> &nbsp;&nbsp;
-                     
-                                <input type="text"  reqired>
+                <label for="street">Street Adress</label> 
+                    <input type="text"   reqired>
 
-                        </section> <br>
-
-                <label for="street">Street Adress</label> <br>
-                    <input type="text"   reqired><br><br>
-
-                    <label for="district">District</label> <br><br>
-                        <input type="text"   reqired><br><br>
+                    <label for="district">District</label> 
+                        <input type="text"   reqired>
     
-                    <label for="Phone">Phone Number </label> <br>
-                        <input type="text"   reqired><br><br>
-
-                <label for="message">Order Message</label>  <br>
-                    <textarea id="Message" rows="6"></textarea><br>
+                    <label for="Phone">Phone Number </label> 
+                        <input type="text"   reqired>
+                <label for="message">Order Message</label>
+                    <textarea id="Message" rows="6"></textarea>
 
                 <button class="btn" type="button" onclick="openPopup()">Submit</button>    
           
@@ -74,7 +69,7 @@
                             <img src="../images/tick.JPG">
                                 <h2>Thank You!</h2> 
                                 <p>your Details Was Successfully Submitted. Thanks!</p>
-                                <button type="button"  onclick="closePopup()">Continue With Payment</button>
+                                <button type="submit"  onclick="closePopup()">Continue With Payment</button>
                     </div>
             </div>
 </body>
@@ -91,7 +86,7 @@
 <style>
 
 
-    body{
+body{
         line-height: 1.5;
         font-family: 'poppins',sans-serif;
         background:whitesmoke;
@@ -108,58 +103,55 @@
 
     }
 
-    .Billing-Details > form{
-        width: 60%;
-        height: auto;
-        border: 1px solid black;
-        margin:auto;
-        padding:20px;
-        margin-top:20px;
-        margin-bottom:30px;
+/* Base styles */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
 
-    }
+.Billing-Details {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
 
-    form > section{
-        display:flex;
-    }
-    form > input{
-        width: 700px;
-        height:40px;
-        border:1px solid;
-    }
-    section input{
-        width: 345px;
-        height:40px;
-        border:1px solid;
-    }
-    .second{
-        padding-left:280px;
-    }
-    .secnd{
-        padding-left:308px;
-    }
-    textarea{
-        width: 700px;
-        height:150px;
-    }
-    .btn:hover{
-        background: rgba(0, 0, 0, 0.816);
-        color:white;
-        transition:all 0.3s ease-in-out;
-        transform: translateY(-5px) ;
-        border:none;
-    }
-  
+.Billing-Details h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 
+label {
+    display: block;
+    margin-bottom: 6px;
+}
 
-    .container2{
-        display:flex;
-        position:relative;
-        align-items:center;
-        justify-content:center;
-        bottom:28em;
-    }
-    .btn{
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+section label {
+    flex: 1 1 50%; /* Adjust this value as needed */
+}
+ 
+   .btn{
         padding:10px 60px;
         background:#fff;
         border:1px solid #e91e63;
@@ -168,8 +160,25 @@
         font-size:20px;
         font-weight:300;
         position:relative;
-        left:15em;
+       
+       
     }
+
+    .btn:hover{
+        background: rgba(0, 0, 0, 0.816);
+        color:white;
+        transition:all 0.3s ease-in-out;
+        transform: translateY(-5px) ;
+        border:none;
+    }
+    .container2{
+        display:flex;
+        position:relative;
+        align-items:center;
+        justify-content:center;
+        bottom:28em;
+    }
+  
     .popup{
         width:400px;
         background:#fff;
@@ -214,5 +223,16 @@
         cursor:pointer;
         box-shadow:0 3px 5px rgba(0,0,0,0.2);
     }
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    section label {
+        flex: 1 1 100%;
+        margin-bottom: 6px;
+    }
+}
+
+  
+
+
     </style>
 </html>
