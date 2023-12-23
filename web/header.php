@@ -35,43 +35,60 @@
     <div class="yes">
         
         
-            <ul>
+        <ul class="cont">
+            
                 <ol><a href="index.php">Home</a></ol>
 
  
- <ol>
-    <div class="dropdown"><a href="#">Men  </a> 
-    <div class="dropdown-content">
-    <a href="mshirt.php">Shirt</a>
-    <a href="mpant.php">Pant</a>
-    <a href="mclosedshoes.php">Closed shoes</a>
-    <a href="msandals.php">Sandals</a></div></div>
- </ol> 
+            <ol>
+                <div class="dropdown"><a href="#">Men  </a> 
+                <div class="dropdown-content">
+                <a href="mshirt.php">Shirt</a>
+                <a href="mpant.php">Pant</a>
+                <a href="mclosedshoes.php">Closed shoes</a>
+                <a href="msandals.php">Sandals</a></div></div>
+            </ol> 
 
 
- <ol>
-    <div class="dropdown"><a href="#">Women </a> 
-    <div class="dropdown-content">
-    <a href="wdress.php">Dress</a>
-    <a href="wpant.php">Pant</a>
-    <a href="wclosedshoes.php">Closed shoes</a>
-    <a href="wsandals.php">Sandals</a>
-    <a href="wbag.php">Bag</a></div><div>
- </ol>
+            <ol>
+                <div class="dropdown"><a href="#">Women </a> 
+                <div class="dropdown-content">
+                <a href="wdress.php">Dress</a>
+                <a href="wpant.php">Pant</a>
+                <a href="wclosedshoes.php">Closed shoes</a>
+                <a href="wsandals.php">Sandals</a>
+                <a href="wbag.php">Bag</a></div><div>
+            </ol>
 
 
 
 
-                <ol><a href="product.php">Products</a></ol>
-                <ol><a href="collection.php">collections</a></ol>
-                <ol><a href="contacts.php">Contact</a></ol>
-                <ol>
-                    
-               
+               <ol><a href="product.php">Products</a></ol>
+               <ol><a href="collection.php">collections</a></ol>
+               <ol><a href="contacts.php">Contact</a></ol>
+        <ul>
+                                
+                        
             
     </div>
 
-  
+  <style>
+    @media screen and (max-width:768px) {
+    .yes{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        width:100%;
+        /* display:none; */
+    }
+
+    .yes ul ol{
+        display: inline;
+ 
+    }
+
+ }
+  </style>
 
 </body>
 </html>

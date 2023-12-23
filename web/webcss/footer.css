@@ -19,7 +19,6 @@
 
     .footer{
         background-color: #24262b;
-        padding: 20px 0;
 
     }
 
@@ -85,4 +84,12 @@
     .footer-col .social-links a:hover{
         color: #24262b;
         background-color: #ffffff;
+    }
+
+    /* media query for small screen */
+    @media screen and (max-width: 768px) {
+
+        /* .footer{
+           background-color: red;
+        } */
     }

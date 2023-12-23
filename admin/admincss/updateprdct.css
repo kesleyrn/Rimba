@@ -60,3 +60,11 @@ form .up:hover{
     text-decoration: none;
     padding-left: 40px;
 } */
+
+
+@media screen and (max-width: 769px) {
+    .container {
+        padding:20px 30px  0 20px;
+    }
+  }
+  

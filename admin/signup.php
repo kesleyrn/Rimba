@@ -8,8 +8,6 @@ if(isset($_POST['submit'])){
     $Telphone = $_POST['Telphone'];
     $Password = $_POST['Password'];
 
-    // Hash the password
- 
 
     $sql = "INSERT INTO `users` (Flname, User_name, Email, Telphone, Password) 
             VALUES ('$Flname', '$User_name', '$Email', '$Telphone', '$Password')";

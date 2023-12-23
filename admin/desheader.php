@@ -29,18 +29,18 @@ header('location:login.php');
                     <i><a href="desprofile.php">
                         <i class="fa-solid fa-user" style="font-size: 28px;margin-right: 20px;">
                     </i></a>
-            
-</div>
+    </div>    
+
 
     <div class="yes">
-           <ul>
+           <ul class="cont">
                 <ol><a href="desview.php">Home</a></ol>
                 <ol><a href="additem.php">Add-products</a></ol>
                 <ol><a href="#">Monthly-Report</a></ol>
                 <ol><a href="signup.php">Sign_user</a></ol>
-                <ol>  
+               
             </ul> 
     </div>
-
+   
 </body>
 </html>

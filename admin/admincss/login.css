@@ -60,3 +60,8 @@ form .btn2:hover{
     padding-left: 40px;
 }
 
+@media screen and (max-width: 769px) {
+    .container {
+        padding: 80px 30px  0 20px;
+    }
+  }

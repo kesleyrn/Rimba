@@ -42,20 +42,6 @@ body{
 .alb a{
   text-decoration:none;
 }
-.btn1,.btn2{
-width:100px;
-height:30px;
-cursor:pointer;
-border-radius:5px;
-}
-.btn1{
-    background-color: rgb(99, 107, 107);
-    color: whitesmoke;
-}
-.btn2{
-    background-color:rgb(219, 188, 15);
-    color: black;
-}
 .webimg img{
    width:98%;
    height:50vh;

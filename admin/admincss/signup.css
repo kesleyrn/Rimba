@@ -19,12 +19,11 @@ body{
 .Signup-Form h2{
     padding-top: 20px;
     padding-bottom: 20px;
+    text-align: center;
 }
 
 .Signup-Form form{
     width: 100%;
-   
-    
 
 }
 form input{
@@ -59,3 +58,11 @@ form .btn2:hover{
     text-decoration: none;
     padding-left: 40px;
 }
+
+ /* Responsive styles */
+ @media screen and (max-width: 769px) {
+    .container {
+        padding:20px 30px  0 20px;
+    }
+  }
+  

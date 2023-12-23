@@ -154,7 +154,7 @@
                     display: inline-block;
                 }
                 .input-group input{
-                    width:55.2vh;
+                    width:55.3vh;
                 }
                 
                 .btn{
@@ -235,6 +235,27 @@
                     flex: 1 1 100%;
                     margin-bottom: 6px;
                 }   
+
+                .input-group{
+                    display: inline;
+                }
+                .input-group input{
+                    width:100%;
+                }
+            }
+
+            @media screen and (max-width: 1200px) {
+                section label {
+                    flex: 1 1 100%;
+                    margin-bottom: 6px;
+                }   
+
+                .input-group{
+                    display: inline;
+                }
+                .input-group input{
+                    width:100%;
+                }
             }
 
             

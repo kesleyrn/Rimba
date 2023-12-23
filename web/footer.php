@@ -55,4 +55,34 @@
         </div>
     </footer>
 </body>
+<style>
+      @media screen and (max-width: 768px) {
+
+        .container{
+        max-width: 1800px;
+       
+     
+    }
+        .footer-col{
+            width: 50%;
+            padding: 10px;
+        }
+        ul{
+           margin-left:5px;
+        }
+    
+        .footer-col h4{
+            font-size: 15px;
+            margin-bottom: 20px;
+            font-weight: 400;
+        
+
+        }
+        .footer-col ul li a{
+            font-size: 16px;
+            display: inline;
+            
+        }
+}
+</style>
 </html>

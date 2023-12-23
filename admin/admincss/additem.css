@@ -11,13 +11,14 @@ body{
     font-family:'Robot,'sans-serif;
 }
 .container{
-    padding:0 30%  0 20%;
+    padding:20px 30%  0 20%;
 }
 .additem-Form{
     flex-basis: 60%;
 }
 .additem-Form h2{
     padding-bottom: 20px;
+    text-align: center;
 }
 
 .additem-Form form{
@@ -60,3 +61,9 @@ form .up:hover{
     text-decoration: none;
     padding-left: 40px;
 }
+@media screen and (max-width: 769px) {
+    .container {
+        padding:20px 30px  0 20px;
+    }
+  }
+  
