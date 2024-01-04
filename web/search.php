@@ -70,7 +70,9 @@ include "header.php";
                     echo '<button class="btn"><a href="search.php?page=' . $btn . '&search=' . $search . '">' . $btn . '</a></button>';
                 }
             } else {
+                echo '<br><br><br> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;';
                 echo "No results found for '{$search}'.";
+                echo '<br><br><br><br><br><br>';
             }
         } else {
             // Fetch all records without a specific search term

@@ -15,9 +15,9 @@
                 <div class="footer-col">
                     <h4>Campany</h4>
                     <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Our services</a></li>
-                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="aboutus.php">About us</a></li>
+                        <li><a href="services.php">Our services</a></li>
+                        <li><a href="privacy.php">Privacy policy</a></li>
                        
                     </ul>
                 </div>
@@ -26,7 +26,6 @@
                     <ul>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Returns</a></li>
                         <li><a href="#">payment optios</a></li>
                     </ul>
                 </div>

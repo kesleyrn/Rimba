@@ -12,11 +12,34 @@ include "desheader.php";
 
 </head>
 <body> 
-
-    <div class="wel">
+<div class="container">
             <?php
             include "../connection.php";
-            $sql="SELECT *FROM `products`  ORDER BY 'id' DESC ";
+
+            
+            $numberPerPage = 10; // Records to display per page
+
+            // Get the total number of records
+            $sqlTotal = "SELECT COUNT(id) AS total FROM `products`";
+            $resultTotal = mysqli_query($conn, $sqlTotal);
+            $rowTotal = mysqli_fetch_assoc($resultTotal);
+            $totalRecords = $rowTotal['total'];
+
+            // Calculate total pages based on records and records per page
+            $totalPages = ceil($totalRecords / $numberPerPage);
+
+            // Get the current page
+            if(isset($_GET['page'])){
+                $page = $_GET['page'];
+            } else {
+                $page = 1;
+            }
+
+            // Calculate the starting limit for the SQL query
+            $startingLimit = ($page - 1) * $numberPerPage;
+
+            // Fetch records for the current page
+            $sql="SELECT *FROM `products`  ORDER BY 'id' DESC LIMIT $startingLimit, $numberPerPage ";
             $result = mysqli_query($conn,$sql);
 
             if(mysqli_num_rows($result) > 0){
@@ -36,7 +59,12 @@ include "desheader.php";
             <?php   }
             }
             ?>
-</div>
-
+ </div>
+ <?php
+   // Creating pagination buttons
+   for($btn = 1; $btn <= $totalPages; $btn++){
+    echo '<button class="btn"><a href="desview.php?page=' . $btn . '">' . $btn . '</a></button>';
+}
+ ?>
 </body>
 </html>

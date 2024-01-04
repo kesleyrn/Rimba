@@ -230,7 +230,7 @@
                     box-shadow:0 3px 5px rgba(0,0,0,0.2);
                 }
             /* Media queries for responsiveness */
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 600px ) {
                 section label {
                     flex: 1 1 100%;
                     margin-bottom: 6px;
@@ -252,6 +252,19 @@
 
                 .input-group{
                     display: inline;
+                }
+                .input-group input{
+                    width:100%;
+                }
+            }
+            @media screen and (max-width: 2560px) {
+                section label {
+                    flex: 1 1 100%;
+                    margin-bottom: 6px;
+                }   
+
+                .input-group{
+                    display:inline;
                 }
                 .input-group input{
                     width:100%;

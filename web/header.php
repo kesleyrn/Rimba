@@ -33,8 +33,6 @@
 
 
     <div class="yes">
-        
-        
         <ul class="cont">
             
                 <ol><a href="index.php">Home</a></ol>
@@ -67,28 +65,7 @@
                <ol><a href="collection.php">collections</a></ol>
                <ol><a href="contacts.php">Contact</a></ol>
         <ul>
-                                
-                        
-            
+         
     </div>
-
-  <style>
-    @media screen and (max-width:768px) {
-    .yes{
-        display: flex;
-        flex-direction: row;
-        align-items:center;
-        width:100%;
-        /* display:none; */
-    }
-
-    .yes ul ol{
-        display: inline;
- 
-    }
-
- }
-  </style>
-
 </body>
 </html>

@@ -121,7 +121,6 @@
    border-radius: 2px;
 }
 
-
     /* media query for small screen */
     @media screen and (max-width: 768px) {
         .container{

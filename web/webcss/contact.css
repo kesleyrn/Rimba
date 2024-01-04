@@ -9,6 +9,7 @@ body{
     margin: 0;
     box-sizing: border-box;
     font-family:'Robot,'sans-serif;
+    overflow-y: hidden;
 }
 /* ------------------contact -------------------- */
 
@@ -77,3 +78,10 @@ transition: transform 0.5s;
     transform: translateY(-5px);
 }
 
+/* media query for small screen */
+/* @media screen and (max-width: 768px) {
+ 
+.contact-left{
+  display: none;
+}
+} */
