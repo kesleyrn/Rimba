@@ -22,9 +22,6 @@ body{
 
 .update-Form form{
     width: 100%;
-   
-    
-
 }
 form input,.slct{
     width: 100%;
@@ -37,9 +34,7 @@ form input,.slct{
     font-size: 18px;
     border-radius: 6px;
     flex-wrap: wrap;
-
 }
-
 form .up{
     width: 150px;
     padding: 14px 60px;
