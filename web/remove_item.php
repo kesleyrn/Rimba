@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product_id'])) {
 
     // Check if 'cart' session variable is set for unlogged users
     if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
-        // Find and remove the specified product ID from the cart
+        // Find and remove the specified product ID from the cart page
         $key = array_search($productIdToRemove, $_SESSION['cart']);
         if ($key !== false) {
             unset($_SESSION['cart'][$key]);

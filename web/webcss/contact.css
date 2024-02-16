@@ -78,9 +78,15 @@ transition: transform 0.5s;
 }
 
 /* media query for small screen */
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
  
-.contact-left{
-  display: none;
+    .contact-left{
+        flex-basis: 90%;
+        margin-left: 50px;
+        padding-top: 20px;
+    }
+    .contact-right{
+        flex-basis: 90%;
+        margin-left: 50px;
+    }
 }
-} */

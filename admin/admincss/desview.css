@@ -13,8 +13,8 @@ body{
 }
 .container{
     margin: auto;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     justify-items: center;
    
 }
