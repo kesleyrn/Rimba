@@ -16,7 +16,7 @@ include "header.php";
             <?php
             include "../connection.php";
 
-            $numberPerPage = 10; // Records to display per page
+            $numberPerPage = 20; // Records to display per page
 
             // Get the total number of records
             $sqlTotal = "SELECT COUNT(id) AS total FROM `products`";

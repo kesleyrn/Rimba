@@ -13,21 +13,18 @@ body{
 }
 .container{
     margin: auto;
-    /* display: flex; */
-    /* justify-content: center; */
-    justify-items: center;
    
 }
 
 /* for this page only */
 .alb{
 width:230px;
-height:320px;
+height:350px;
 padding:6px;
 display:inline-block;
 background: rgb(236, 236, 236);
 border-radius: 8px;
-margin:2px;
+/* margin:2px; */
 
 
 
@@ -73,6 +70,10 @@ text-decoration:none;
 
 /* media query for small screen */
 @media screen and (max-width: 768px) {
+    .container{
+        align-items: center;
+        justify-content: center;
+    }
     .alb{
         width:170px;
         height:250px;

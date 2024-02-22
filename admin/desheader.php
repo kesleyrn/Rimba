@@ -11,7 +11,8 @@ header('location:login.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rimba</title>
+    <link rel="icon" href="../images/RimbaTradenarkt.png" type="image/x-icon">
+    <title>Rimba &mdash; HighQuality</title>
     <link rel="stylesheet" href="admincss/desheader.css">
     
 </head>
