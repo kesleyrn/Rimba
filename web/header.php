@@ -13,42 +13,71 @@
       
         .trends{
             width:100%;
+          
             margin:auto;
-            /* padding-top:20px; */
+            
             
         }
         .trends img{
             height:25rem;
             width:100%;
         }
-        @media screen and (max-width: 768px) {
-        .toggle-button {
-            display: block;
-            width:30px;
-            height:30px;
-            position:relative;
-            right:5px;
-            top:5px;
-        } 
-        .yes {
-            display: none;
+        .trends-buttons {
+            position: relative;
+            top: -18rem;
+            display:flex;
+            justify-content:space-between;
+            padding:40px;
         }
-        .yes.open {
-            display: block;
-        }
-        .trends{
-            padding-top:10px;
-            
-        }
-        .trends img{
-            height:10rem;
-            width:100%;
-        }
-        .search{
-            display:none;
+        .trends-buttons button {
+            margin: 0 10px;
+            cursor: pointer;
+            background:transparent;
+            color:black;
+            border:none;
         }
 
-       
+        @media screen and (max-width: 768px) {
+            .toggle-button {
+                display: block;
+                width:30px;
+                height:30px;
+                position:relative;
+                right:20px;
+                top:5px;
+            } 
+            .yes {
+                display: none;
+            }
+            .yes.open {
+                display: block;
+            }
+            .trends{
+                padding-top:10px;
+                
+            }
+            .trends img{
+                height:10rem;
+                width:100%;
+            }
+            .search{
+                display:none;
+            }
+            .Logo{
+                position:relative;
+                left:-3rem;
+            }
+            nav{
+                position:relative;
+                padding-right:15px;
+            }
+            nav ul li a {
+                display:flex;
+            }
+            .trends-buttons {
+                position:relative;
+                top: -10rem;
+            }
         }
     </style>
 </head>
@@ -56,7 +85,7 @@
 
 <div class="menu" style="height: 4rem;">
     <div class="navbar">
-        <a href="#"><img src="../images/RImbaLogo.png" style="width: 9rem;height: 10rem; padding-top:30px;"></a> 
+        <a href="./index.php" class="Logo"><img src="../images/RImbaLogo1.png"  style="width: 5rem;height: 60px; position:relative; top:8px; left:55px;"></a> 
         <nav>
             <ul><b>
                 <li><a href="../admin/login.php">Login</a></li>
@@ -107,14 +136,46 @@
         <ul>
     </div>
     <div class="trends">
-        <img src="../images/sample.jpg">
+    <img src="../images/Discountpost.jpg" id="trendsImage">
+    <div class="trends-buttons">
+        <button onclick="prevImage()"><i class="fas fa-chevron-left" style="font-size: 70px; "></i></button>
+        <button onclick="nextImage()"><i class="fas fa-chevron-right" style="font-size: 70px; "></i></button>
     </div>
+</div>
 
-    <script>
-        function toggleMenu() {
-            var yesDiv = document.querySelector('.yes');
-            yesDiv.classList.toggle('open');
+
+<script>
+    var images = [
+        '../images/Discountpost.jpg',
+        '../images/Discountpost.jpg',
+        '../images/Discountpost.jpg'
+    ];
+    var currentImageIndex = 0;
+    var trendsImage = document.getElementById('trendsImage');
+
+    function nextImage() {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        trendsImage.src = images[currentImageIndex];
+    }
+
+    function prevImage() {
+        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+        trendsImage.src = images[currentImageIndex];
+    }
+
+    function toggleMenu() {
+        var yesDiv = document.querySelector('.yes');
+        yesDiv.classList.toggle('open');
+        if (yesDiv.classList.contains('open')) {
+            yesDiv.style.display = "block";
+        } else {
+            yesDiv.style.display = "none";
         }
-    </script>
+    }
+
+    // Auto image rotation
+    setInterval(nextImage, 5000); // Change image every 5 seconds
+</script>
+
 </body>
 </html>
