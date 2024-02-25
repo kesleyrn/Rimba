@@ -18,11 +18,11 @@ header('location:login.php');
 </head>
 <body>
 
-<div class="menu">
+<div class="menu" style="height: 4rem;">
 
     <div class="navbar">
-        <a href="#"><img src="../images/official-website-3-48.png"></a> 
-            <nav>
+    <a href="#"><img src="../images/RImbaLogo.png" style="width: 9rem;height: 10rem; padding-top:30px;"></a>
+            <nav style="padding-top: 5px;">
                 <ul>
                     <b><li><a href="logout.php">Logout</a></li></b>  
                 </ul>

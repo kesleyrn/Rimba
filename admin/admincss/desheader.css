@@ -43,7 +43,7 @@ nav ul li img{
 nav ul li {
     list-style: none;
     display: inline-block;
-    margin-left: 10px;
+    padding-left: 10px;
     font-family: 'poppins',sans-serif;
     
 

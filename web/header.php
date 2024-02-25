@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/RimbaTradenarkt.png" type="image/x-icon">
     <title>Rimba &mdash; HighQuality</title>
-    <link rel="stylesheet" href="webcss/header.css">
+    <link rel="stylesheet" href="webcss/header2.css">
     
 </head>
 <body>
 
-<div class="menu">
+<div class="menu" style="height: 4rem;">
     <div class="navbar">
-        
+                <a href="#"><img src="../images/RImbaLogo.png" style="width: 9rem;height: 10rem; padding-top:30px;"></a> 
         <nav>
             <ul><b>
                 <li><a href="../admin/login.php">Login</a></li>

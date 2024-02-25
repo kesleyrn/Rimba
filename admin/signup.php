@@ -29,7 +29,7 @@ if(isset($_POST['submit'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rimba</title>
+    <title>Rimba &mdash; HighQuality</title>
     <link rel="stylesheet" href="admincss/signup.css">
 </head>
 <body>
@@ -40,15 +40,15 @@ if(isset($_POST['submit'])){
                         <h2>Signup Here</h2>
                         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                             First & last names
-                            <input type="text" name="Flname" placeholder="Enter your First and Last Names" reqired>
+                            <input type="text" name="Flname" placeholder="Enter your First and Last Names" required>
                             User name :
-                            <input type="text" name="User_name" placeholder="Enter your User-Name" reqired>
+                            <input type="text" name="User_name" placeholder="Enter your User-Name" required>
                             Email:   
-                            <input type="email" name="Email" placeholder="Enter your Email" reqired>
+                            <input type="email" name="Email" placeholder="Enter your Email" required>
                             Telphone  :   
-                            <input type="telphone" name="Telphone" placeholder="Enter your Telephone Number" reqired>
+                            <input type="telphone" name="Telphone" placeholder="Enter your Telephone Number" required>
                             Password:
-                            <input type="password" name="Password" placeholder="Enter your Password" reqired>
+                            <input type="password" name="Password" placeholder="Enter your Password" required>
 
                             <button type="submit" class="btn btn2" name ="submit">Signup</button>
                             <a href="desview.php">Back-to Dashboard</a></a>

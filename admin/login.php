@@ -8,7 +8,7 @@ include "../connection.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rimba</title>
+    <title>Rimba &mdash; HighQuality</title>
     <link rel="stylesheet" href="admincss/login.css">
 </head>
 <body>
@@ -19,9 +19,9 @@ include "../connection.php";
                         <h2>Login Here As Admin</h2>
                         <form method="post" class="contact-form" action="validation.php">
                             User name:
-                            <input type="text" name="User_name" placeholder="Enter your User-Name" reqired>
+                            <input type="text" name="User_name" placeholder="Enter your User-Name" required>
                             Email:   
-                            <input type="email" name="Email" placeholder="Enter your Email" reqired>
+                            <input type="email" name="Email" placeholder="Enter your Email" required>
                             Password:
                             <input type="password" name="Password" placeholder="Enter your Password" reqired>
 

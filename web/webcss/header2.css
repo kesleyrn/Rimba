@@ -32,7 +32,8 @@ body{
 nav{
     flex: 1;
     text-align: right;
-    margin-right:50px ;
+    margin-right:20px ;
+    padding-top:12px;
    
 }
 .cart{
@@ -56,10 +57,7 @@ nav ul li a{
     color: white;
     font-size: 13px;
 }
-.navbar form{
-   margin-left: 5px;
 
-}
 .navbar .search input{
     height: 30px;
     width: 200px;
@@ -72,7 +70,8 @@ nav ul li a{
 .search{
 max-width: 400px;
 display: flex;
-margin-right: 40px;
+padding-right: 20px;
+padding-top:12px;
 }
 
 
@@ -151,6 +150,10 @@ margin-right: 40px;
     padding:0 8px 0 3px;
     font-size: 10px;
     
+    }
+    .navbar .search input{
+       display:none;
+        
     }
    
   }
