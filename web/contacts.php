@@ -40,9 +40,9 @@ include "header.php"
             <div class="contact-right">
                 <h2>Message Us</h2>
                 <form class="send">
-                    <input type="text"  id="Name" placeholder="Enter your name" reqired>
-                    <input type="email"  id="Email" placeholder="Enter your Email" reqired>
-                    <textarea id="Message" rows="6" placeholder="Enter your Message"></textarea>
+                    <input type="text"  id="Name" placeholder="Enter your name" required>
+                    <input type="email"  id="Email" placeholder="Enter your Email" required>
+                    <textarea id="Message" rows="6" placeholder="Enter your Message" required></textarea>
                     <button type="submit" class="btn btn2" onclick="sendMail()">Submit</button>
                 </form>
 
@@ -51,7 +51,51 @@ include "header.php"
        
     </div>
   
-</div>
+</div> 
+    <style>
+     .send .btn2{
+        padding:8px;
+        background: #e91e63;
+        border:none;
+        border-radius:1px;
+        cursor: pointer;
+        font-weight:500;
+        border:1px solid  #e91e63;
+        width:15%;
+        }
+
+    .send .btn2:hover{
+        transition:all 0.5s ease-in-out;
+        background:white;
+        color:#e91e63;
+       }
+
+    /* media query for small screen */
+        @media screen and (max-width: 768px) {
+        
+            .contact-left{
+                flex-basis: 90%;
+                margin-left: 30px;
+                padding-top: 20px;
+            }
+            .contact-left h1{
+                position:relative;
+                top:10px;
+            }
+            .contact-right{
+                flex-basis: 90%;
+                margin-left: 30px;
+            }
+            .send .btn2{
+                width:35%;
+            }
+            .send input,.send textarea{
+                width: 98%;
+
+           }
+        }
+
+    </style>
 <script src="./script.js"></script>
 </body>
 </html>

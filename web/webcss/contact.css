@@ -60,33 +60,6 @@ transition: transform 0.5s;
     border-radius: 6px;
 
 }
-.send .btn2{
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    background:rgb(86, 82, 82);
-    border-radius: 5px;
-    color: #fff;
-}
 
-.send .btn2:hover{
-    background-color: rgb(75, 75, 160);
-    color: #fff;
-    transform: translateY(-5px);
-}
 
-/* media query for small screen */
-@media screen and (max-width: 768px) {
- 
-    .contact-left{
-        flex-basis: 90%;
-        margin-left: 50px;
-        padding-top: 20px;
-    }
-    .contact-right{
-        flex-basis: 90%;
-        margin-left: 50px;
-    }
-}
+
