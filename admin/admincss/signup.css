@@ -45,14 +45,14 @@ form .btn2{
     margin-top: 20px;
     margin-bottom: 50px;
     cursor: pointer;
-    background:rgb(86, 82, 82);
+    background:black;
+    border:1px solid  black;
     color:white;
-    border-radius: 5px;
 }
 form .btn2:hover{
-    background-color:  rgb(75, 75, 160);
-    color: #fff;
-    transform: translateY(-5px);
+    transition:all 0.5s ease-in-out;
+    background:white;
+    color:#e91e63;
 }
 .Signup-Form a{
     text-decoration: none;
@@ -63,6 +63,12 @@ form .btn2:hover{
  @media screen and (max-width: 769px) {
     .container {
         padding:20px 30px  0 20px;
+    }
+    .Signup-Form a{
+        display:inline;
+        padding-left:15px;
+        font-size:13px;
+        color:#e91e63;
     }
   }
   
