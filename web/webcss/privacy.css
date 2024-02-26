@@ -21,7 +21,6 @@ body{
 h2{
     display: flex;
     
-    
 }
 hr{
     width: 160px;
@@ -51,4 +50,5 @@ section{
     .pragraph{
         width: 90%;
     }
+
 }

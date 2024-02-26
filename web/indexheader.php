@@ -144,8 +144,10 @@
 
 <script>
     var images = [
+        
         '../images/Hotsales.jpg',
         '../images/Shineyourfeet.jpg',
+        '../images/DiscountUpdated.jpg',
      
     ];
     var currentImageIndex = 0;

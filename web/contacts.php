@@ -62,6 +62,7 @@ include "header.php"
         font-weight:500;
         border:1px solid  #e91e63;
         width:15%;
+        margin:8px;
         }
 
     .send .btn2:hover{
