@@ -133,10 +133,33 @@
             <ol><a href="contacts.php">Contact</a></ol>
         <ul>
     </div>
+    <div class="trends">
+    <img src="../images/Discountpost.jpg" id="trendsImage">
+    <div class="trends-buttons">
+        <button onclick="prevImage()"><i class="fas fa-chevron-left" style="font-size: 70px; "></i></button>
+        <button onclick="nextImage()"><i class="fas fa-chevron-right" style="font-size: 70px; "></i></button>
+    </div>
+</div>
 
 
 <script>
+    var images = [
+        '../images/Discountpost.jpg',
+        '../images/Discountpost.jpg',
+        '../images/Discountpost.jpg'
+    ];
+    var currentImageIndex = 0;
+    var trendsImage = document.getElementById('trendsImage');
 
+    function nextImage() {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        trendsImage.src = images[currentImageIndex];
+    }
+
+    function prevImage() {
+        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+        trendsImage.src = images[currentImageIndex];
+    }
 
     function toggleMenu() {
         var yesDiv = document.querySelector('.yes');
@@ -148,7 +171,8 @@
         }
     }
 
-
+    // Auto image rotation
+    setInterval(nextImage, 5000); // Change image every 5 seconds
 </script>
 
 </body>
