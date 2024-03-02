@@ -18,7 +18,7 @@
             
         }
         .trends img{
-            height:25rem;
+            height:30rem;
             width:100%;
         }
         .trends-buttons {
