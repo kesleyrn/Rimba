@@ -13,6 +13,7 @@ include "indexheader.php";
 </head>
 <body>
   <div class="container">
+    <h2>RimbaShop Trends >></h2>
             <?php
             include "../connection.php";
 

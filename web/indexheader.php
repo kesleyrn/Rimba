@@ -23,7 +23,7 @@
         }
         .trends-buttons {
             position: relative;
-            top: -18rem;
+            top: -20rem;
             display:flex;
             justify-content:space-between;
             padding:40px;

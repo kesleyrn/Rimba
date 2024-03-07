@@ -37,6 +37,7 @@ include "../connection.php";
          .Login-Form .btn2{
             padding:8px;
             background: black;
+            color:#fff;
             border:none;
             border-radius:1px;
             cursor: pointer;

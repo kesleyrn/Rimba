@@ -11,16 +11,11 @@
         box-sizing: border-box;
         font-family:'Robot,'sans-serif;
     }
-    .main_container{
-        flex-direction: row;
-        display: flex;
-    }
+
     .container{
         margin: auto;
-     
     }
 
-   /* for this page only */
    .alb{
     width:230px;
     height:350px;
@@ -57,7 +52,6 @@
 .btn{
     padding: 12px;
     position: relative;
-    /* right: 24em; */
     align-items: center;
     background: #e91e63;
     border: none;
