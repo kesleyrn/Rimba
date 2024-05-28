@@ -39,7 +39,7 @@ include "desheader.php";
             $startingLimit = ($page - 1) * $numberPerPage;
 
             // Fetch records for the current page
-            $sql="SELECT *FROM `products`  ORDER BY 'id' DESC LIMIT $startingLimit, $numberPerPage ";
+            $sql="SELECT *FROM `products`  ORDER BY id DESC LIMIT $startingLimit, $numberPerPage ";
             $result = mysqli_query($conn,$sql);
 
             if(mysqli_num_rows($result) > 0){

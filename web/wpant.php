@@ -36,7 +36,7 @@ include "header.php";
         $startingLimit = ($page - 1) * $numberPerPage;
 
         // Fetch records for the current page
-        $sql = "SELECT * FROM `products` WHERE Product_name = 'Pant' AND Gender = 'Female' LIMIT $startingLimit, $numberPerPage";
+        $sql = "SELECT * FROM `products` WHERE Product_name = 'Pant' AND Gender = 'Female' ORDER BY id DESC LIMIT $startingLimit, $numberPerPage";
         $result = mysqli_query($conn, $sql);
 
         if(mysqli_num_rows($result) > 0){
