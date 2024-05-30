@@ -110,9 +110,9 @@
             <ol>
                 <div class="dropdown"><a href="#">Men  </a> 
                     <div class="dropdown-content">
-                        <a href="mshirt.php">Shirt</a>
+                        <!-- <a href="mshirt.php">Shirt</a>
                         <a href="mpant.php">Pant</a>
-                        <a href="mclosedshoes.php">Closed shoes</a>
+                        <a href="mclosedshoes.php">Closed shoes</a> -->
                         <a href="msandals.php">Sandals</a>
                     </div>
                 </div>
@@ -120,11 +120,11 @@
             <ol>
                 <div class="dropdown"><a href="#">Women </a> 
                     <div class="dropdown-content">
-                        <a href="wdress.php">Dress</a>
+                        <!-- <a href="wdress.php">Dress</a>
                         <a href="wpant.php">Pant</a>
-                        <a href="wclosedshoes.php">Closed shoes</a>
+                        <a href="wclosedshoes.php">Closed shoes</a> -->
                         <a href="wsandals.php">Sandals</a>
-                        <a href="wbag.php">Bag</a>
+                        <!-- <a href="wbag.php">Bag</a> -->
                     </div>
                 </div>
             </ol>
