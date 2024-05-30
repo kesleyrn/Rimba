@@ -3,276 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rimba</title>
+    <link rel="icon" href="../images/RimbaTradenarkt.png" type="image/x-icon">
+    <title>Rimba &mdash; HighQuality</title>
 </head>
 <body>
 <div class="container">
     <div class="Billing-Details">
         <h2>Billing-Details</h2>
-            <form class="send">
+        <form class="send" onsubmit="sendToWhatsApp(event)">
+            <label for="Names">Full Names</label> 
+            <input type="text" name="Names" id="Names" required>
 
-                <label for="Email">Email</label> 
-                    <input type="email"  reqired> 
-                
-                    <div class="name-section">
-                <div class="input-group">
-                    <label for="Fname">First Name</label>
-                    <input type="text" required>
-                </div>
-                <div class="input-group">
-                    <label for="Lname">Last Name</label>
-                    <input type="text" required>
-                </div>
-            </div>
+            <label for="Email">Email</label>
+            <input type="Email" name="Email" id="Email" required> 
 
-                <label for="Company">Company name</label> 
-                    <input type="text"   reqired>
+            <label for="Location">Location</label>
+            <input type="text" name="Location" id="Location" required> 
 
-                <label for="country">Country / Region</label>
-                    <input type="text"  reqired> 
+            <label for="Phone">Phone Number (WhatsApp)</label> 
+            <input type="text" name="Pnumber" id="Pnumber" required>
 
-                    
+            <label for="Message">Order Message</label>
+            <textarea id="Message" rows="6" name="Message" required></textarea>
 
-                     <div class="contact-section">
-                <div class="input-group">
-                    <label for="Sector">Sector</label>
-                    <input type="text" required>
-                </div>
-                <div class="input-group">
-                    <label for="Cell">Cell</label>
-                    <input type="text" required>
-                </div>
-            </div>
-
-                <label for="street">Street Adress</label> 
-                    <input type="text"   reqired>
-
-                    <label for="district">District</label> 
-                        <input type="text"   reqired>
-    
-                    <label for="Phone">Phone Number </label> 
-                        <input type="text"   reqired>
-                <label for="message">Order Message</label>
-                    <textarea id="Message" rows="6"></textarea>
-
-                <button class="btn" type="button" onclick="openPopup()">Submit</button>    
-          
-            </form>
-
-         </div>
+            <button class="btn" type="submit">Submit</button>    
+        </form>
     </div>
+</div>
 
-         
-
-           <div class="container2">
-                    <div class="popup" id="popup">
-                            <img src="../images/tick.JPG">
-                                <h2>Thank You!</h2> 
-                                <p>your Details Was Successfully Submitted. Thanks!</p>
-                                <button type="submit"  onclick="closePopup()">Continue With Payment</button>
-                    </div>
-            </div>
+<div class="container2">
+    <div class="popup" id="popup">
+        <img src="../images/tick.JPG">
+        <h2>Thank You!</h2> 
+        <p>Your Details Were Successfully Submitted. Thanks!</p>
+        <button type="button" onclick="closePopup()">Continue With Shopping</button>
+    </div>
+</div>
 </body>
 <script>
     let popup = document.getElementById("popup");
 
     function openPopup(){
-         popup.classList.add("open-popup");
+        popup.classList.add("open-popup");
     }
     function closePopup(){
-         popup.classList.remove("open-popup");
+        popup.classList.remove("open-popup");
+        window.location.href = 'index.php';
+    }
+
+    function sendToWhatsApp(event) {
+        event.preventDefault();
+
+        const names = document.getElementById("Names").value;
+        const email = document.getElementById("Email").value;
+        const location = document.getElementById("Location").value;
+        const phone = document.getElementById("Pnumber").value;
+        const message = document.getElementById("Message").value;
+
+        const whatsappMessage = `Full Names: ${names}%0AEmail: ${email}%0ALocation: ${location}%0APhone Number: ${phone}%0AOrder Message: ${message}`;
+        const whatsappUrl = `https://wa.me/788601886?text=${whatsappMessage}`;
+
+        window.open(whatsappUrl, '_blank');
+
+        openPopup();
     }
 </script>
 <style>
+    body {
+        line-height: 1.5;
+        font-family: 'poppins', sans-serif;
+        background:whitesmoke;
+    }
 
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
 
-                body{
-                        line-height: 1.5;
-                        font-family: 'poppins',sans-serif;
-                        background:whitesmoke;
-                    }
+    h2 {
+        text-align: center;
+    }
 
-                    *{
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        font-family:'Robot,'sans-serif;
-                    }
-                    h2{
-                        text-align:center;
+    .container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
 
-                    }
+    .Billing-Details {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+    }
 
-                /* Base styles */
-                .container {
-                    width: 100%;
-                    max-width: 800px;
-                    margin: 0 auto;
-                    padding: 20px;
-                    box-sizing: border-box;
-                    
-                }
+    .Billing-Details h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
 
-                .Billing-Details {
-                    background-color: #f9f9f9;
-                    padding: 20px;
-                    border-radius: 8px;
-                }
+    label {
+        display: block;
+        margin-bottom: 6px;
+    }
 
-                .Billing-Details h2 {
-                    font-size: 24px;
-                    margin-bottom: 20px;
-                }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
 
-                label {
-                    display: block;
-                    margin-bottom: 6px;
-                }
+    .btn {
+        padding: 10px 60px;
+        background: #fff;
+        border: 1px solid #e91e63;
+        outline: none;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 300;
+        position: relative;
+    }
 
-                input[type="text"],
-                input[type="email"],
-                textarea {
-                    width: 100%;
-                    padding: 8px;
-                    margin-bottom: 12px;
-                    border-radius: 4px;
-                    border: 1px solid #ccc;
-                    box-sizing: border-box;
-                }
+    .btn:hover {
+        background: rgba(0, 0, 0, 0.816);
+        color: white;
+        transition: all 0.3s ease-in-out;
+        transform: translateY(-5px);
+        border: none;
+    }
 
-                section {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 10px;
-                    margin-bottom: 12px;
-                }
+    .container2 {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        bottom: 28em;
+    }
 
-                section label {
-                    flex: 1 1 50%; /* Adjust this value as needed */
-                }
-                .input-group{
-                    display: inline-block;
-                }
-                .input-group input{
-                    width:55.3vh;
-                }
-                
-                .btn{
-                        padding:10px 60px;
-                        background:#fff;
-                        border:1px solid #e91e63;
-                        outline:none;
-                        cursor:pointer;
-                        font-size:20px;
-                        font-weight:300;
-                        position:relative;
-                    
-                    
-                    }
+    .popup {
+        width: 400px;
+        background: #fff;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        text-align: center;
+        padding: 0 30px 30px;
+        color: #333;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s;
+    }
 
-                .btn:hover{
-                    background: rgba(0, 0, 0, 0.816);
-                    color:white;
-                    transition:all 0.3s ease-in-out;
-                    transform: translateY(-5px) ;
-                    border:none;
-                }
-                .container2{
-                    display:flex;
-                    position:relative;
-                    align-items:center;
-                    justify-content:center;
-                    bottom:28em;
-                }
-            
-                .popup{
-                    width:400px;
-                    background:#fff;
-                    border-radius:6px;
-                    position:absolute;
-                    top:0;
-                    left:50%;
-                    transform:translate(-50%,-50%) scale(1);
-                    text-align:center;
-                    padding:0 30px 30px;
-                    color:#333;
-                    visibility:hidden;
-                    transition: transform 0.4s,top 0.4s;
+    .open-popup {
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
 
-                }
-                .open-popup{
-                    visibility:visible;
-                    top:50%;
-                    transform:translate(-50%,-50%) scale(1);
-                }
-                .popup img {
-                    width:80px;
-                    margin-top:-50px;
-                    border-radius:50%;
-                    box-shadow:0 2px 5px rgba(0,0,0,0.2);
-                }
-                .popup h2{
-                    font-size:38px;
-                    font-weight:500;
-                    margin:30px 0 10px ;
+    .popup img {
+        width: 80px;
+        margin-top: -50px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
 
-                }
-                .popup button{
-                    width:100%;
-                    margin-top:50px;
-                    padding:10px 0;
-                    background:#6fd649;
-                    border:none;
-                    outline:none;
-                    font-size:18px;
-                    border-radius:4px;
-                    cursor:pointer;
-                    box-shadow:0 3px 5px rgba(0,0,0,0.2);
-                }
-            /* Media queries for responsiveness */
-            @media screen and (max-width: 600px ) {
-                section label {
-                    flex: 1 1 100%;
-                    margin-bottom: 6px;
-                }   
+    .popup h2 {
+        font-size: 38px;
+        font-weight: 500;
+        margin: 30px 0 10px;
+    }
 
-                .input-group{
-                    display: inline;
-                }
-                .input-group input{
-                    width:100%;
-                }
-            }
+    .popup button {
+        width: 100%;
+        margin-top: 50px;
+        padding: 10px 0;
+        background: #6fd649;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    }
 
-            @media screen and (max-width: 1200px) {
-                section label {
-                    flex: 1 1 100%;
-                    margin-bottom: 6px;
-                }   
+    /* Media queries for responsiveness */
+    @media screen and (max-width: 600px) {
+        .input-group {
+            display: inline;
+        }
 
-                .input-group{
-                    display: inline;
-                }
-                .input-group input{
-                    width:100%;
-                }
-            }
-            @media screen and (max-width: 2560px) {
-                section label {
-                    flex: 1 1 100%;
-                    margin-bottom: 6px;
-                }   
+        .input-group input {
+            width: 100%;
+        }
+    }
 
-                .input-group{
-                    display:inline;
-                }
-                .input-group input{
-                    width:100%;
-                }
-            }
+    @media screen and (max-width: 1200px) {
+        .input-group {
+            display: inline;
+        }
 
-            
+        .input-group input {
+            width: 100%;
+        }
+    }
 
+    @media screen and (max-width: 2560px) {
+        .input-group {
+            display: inline;
+        }
 
-    </style>
+        .input-group input {
+            width: 100%;
+        }
+    }
+</style>
 </html>
