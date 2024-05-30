@@ -21,7 +21,7 @@ header('location:login.php');
 <div class="menu" style="height: 4rem;">
 
     <div class="navbar">
-    <a href="#"><img src="../images/RImbaLogo.png" style="width: 9rem;height: 10rem; padding-top:30px;"></a>
+    <a href="#"><img src="../images/RimbaLogoB.png" style="width: 6rem;height:90px;position:relative; top:8px; left:40px;"></a>
             <nav style="padding-top: 5px;">
                 <ul>
                     <b><li><a href="logout.php">Logout</a></li></b>  

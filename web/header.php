@@ -83,7 +83,7 @@
 
 <div class="menu" style="height: 4rem;">
     <div class="navbar">
-        <a href="./index.php" class="Logo"><img src="../images/RImbaLogo1.png"  style="width: 5rem;height: 60px; position:relative; top:8px; left:55px;"></a> 
+        <a href="./index.php" class="Logo"><img src="../images/RimbaLogoB.png"  style="width: 6rem;height: 90px; position:relative; top:8px; left:40px;"></a> 
         <nav>
             <ul><b>
                 <li><a href="../admin/login.php">Login</a></li>
