@@ -86,7 +86,7 @@
         <a href="./index.php" class="Logo"><img src="../images/RimbaLogoB.png"  style="width: 6rem;height: 90px; position:relative; top:8px; left:40px;"></a> 
         <nav>
             <ul><b>
-                <li><a href="../admin/login.php">Login</a></li>
+                <!-- <li><a href="../admin/login.php">Login</a></li> -->
                 <li><a href="cart_page.php"><img class="cart" src="../images/shopping-cart-32.ico"> Cart:
                     <?php
                         include "cart_count.php";

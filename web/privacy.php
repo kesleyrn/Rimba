@@ -21,7 +21,8 @@ include "header.php"
             By visiting Rimba Shop, you are accepting the practices described in this Privacy Notice.<br>
 
             About this Notice
-            This Privacy and Cookie Notice provides information on how Rimba Shop collects and processes your personal data when you visit our website or mobile applications.<br><br>
+            This Privacy and Cookie Notice provides information on how Rimba Shop collects and 
+            processes your personal data when you visit our website or mobile applications<a href="../admin/login.php" class="Log">...</a><br><br>
 
             Process orders
             Deliver products and services

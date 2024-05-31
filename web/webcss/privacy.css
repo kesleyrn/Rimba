@@ -37,7 +37,6 @@ section{
     width: 85%;
 }
 
-
  /* media query for small screen */
  @media screen and (max-width: 768px) {
     .contain{
