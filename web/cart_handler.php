@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['cart'][] = $productId;
                     // Show JavaScript alert and confirm with the user
                     echo '<script>
-                    alert("Item added to cart!");
+                    // alert("Item added to cart!");
                     window.location.href = "cart_page.php"; // Redirect to the desired page after alert
                  </script>';
                 exit();
