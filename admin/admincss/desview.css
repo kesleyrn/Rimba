@@ -11,24 +11,7 @@ body{
     box-sizing: border-box;
     font-family:'Robot,'sans-serif;
 }
-.container{
-    margin: auto;
-   
-}
 
-/* for this page only */
-.alb{
-width:230px;
-height:350px;
-padding:6px;
-display:inline-block;
-background: rgb(236, 236, 236);
-border-radius: 8px;
-/* margin:2px; */
-
-
-
-}
 
 .alb img{
 width:100%;

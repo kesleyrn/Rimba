@@ -66,5 +66,27 @@ include "desheader.php";
     echo '<button class="btn"><a href="desview.php?page=' . $btn . '">' . $btn . '</a></button>';
 }
  ?>
+
+
+<style>
+    .container{
+    margin: auto;
+    max-width: 1170px;
+    padding-top: 10px;
+   
+    }
+
+    /* for this page only */
+    .alb{
+    width:230px;
+    height:350px;
+    padding:6px;
+    display:inline-block;
+    background: rgb(236, 236, 236);
+    border-radius: 8px;
+    margin-top: 11px;
+
+    }
+</style>
 </body>
 </html>
