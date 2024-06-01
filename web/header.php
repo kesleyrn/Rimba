@@ -11,70 +11,99 @@
             display: none;
         }
       
-        .trends{
-            width:100%;
-            margin:auto;
-            
-            
+        .trends {
+            width: 100%;
+            margin: auto;
         }
-        .trends img{
-            height:25rem;
-            width:100%;
+        .trends img {
+            height: 25rem;
+            width: 100%;
         }
         .trends-buttons {
             position: relative;
             top: -18rem;
-            display:flex;
-            justify-content:space-between;
-            padding:40px;
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
         }
         .trends-buttons button {
             margin: 0 10px;
             cursor: pointer;
-            background:transparent;
-            color:black;
-            border:none;
+            background: transparent;
+            color: black;
+            border: none;
         }
 
         @media screen and (max-width: 768px) {
             .toggle-button {
                 display: block;
-                width:30px;
-                height:30px;
-                position:relative;
-                right:20px;
-                top:5px;
+                width: 30px;
+                height: 30px;
+                position: relative;
+                right: 20px;
+                top: 5px;
+                z-index: 1001;
             } 
             .yes {
                 display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color:black;
+                /* background-color: #ababab; */
+                z-index: 1000;
+                overflow-y: auto;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-top: 4rem;
             }
             .yes.open {
+                display: flex;
+            }
+            .yes ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .yes ol {
+                margin: 20px 0;
+            }
+            .yes ol a {
+                color:white;
+                /* color: #ff004f; */
+                font-size: 20px;
+            }
+            .Logo {
                 display: block;
+                margin-left: 10px;
             }
-            .trends{
-                padding-top:10px;
-                
+            .trends {
+                padding-top: 10px;
             }
-            .trends img{
-                height:10rem;
-                width:100%;
+            .trends img {
+                height: 10rem;
+                width: 100%;
             }
-            .search{
-                display:none;
+            .search {
+                display: none;
             }
-            .Logo{
-                position:relative;
-                left:-3rem;
-            }
-            nav{
-                position:relative;
-                padding-right:15px;
-            }
-            nav ul li a {
-                display:flex;
+            nav {
+                display: none;
             }
             .trends-buttons {
-              display:none;
+                display: none;
+            }
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
         }
     </style>
@@ -83,7 +112,10 @@
 
 <div class="menu" style="height: 4rem;">
     <div class="navbar">
-        <a href="./index.php" class="Logo"><img src="../images/RimbaLogoB.png"  style="width: 6rem;height: 90px; position:relative; top:8px; left:40px;"></a> 
+        <a href="./index.php" class="Logo"><img src="../images/RimbaLogoB.png" style="width: 6rem; height: 90px; position: relative; padding-top:15px;"></a> 
+        <button class="toggle-button" onclick="toggleMenu()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
         <nav>
             <ul><b>
                 <!-- <li><a href="../admin/login.php">Login</a></li> -->
@@ -96,15 +128,12 @@
             </b></ul>
         </nav>
         <form class="search" action="search.php" method="POST">
-            <input type="search" name="search" placeholder="search anything" > 
+            <input type="search" name="search" placeholder="search anything"> 
             <button type="submit" name="submit"><img class="Search_icon" src="../images/search_icon.svg" style="background: white;"></button>
         </form>
-        <button class="toggle-button" onclick="toggleMenu()">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-        </button>
     </div>
 
-    <div class="yes" style="padding-top: 40px;">
+    <div class="yes">
         <ul class="cont">
             <ol><a href="index.php">Home</a></ol>
             <ol>
@@ -118,7 +147,7 @@
                 </div>
             </ol> 
             <ol>
-                <div class="dropdown"><a href="#">Women </a> 
+                <div class="dropdown"><a href="#">Women</a> 
                     <div class="dropdown-content">
                         <!-- <a href="wdress.php">Dress</a>
                         <a href="wpant.php">Pant</a>
@@ -129,26 +158,23 @@
                 </div>
             </ol>
             <ol><a href="product.php">Products</a></ol>
-            <ol><a href="collection.php">collections</a></ol>
+            <ol><a href="collection.php">Collections</a></ol>
             <ol><a href="contacts.php">Contact</a></ol>
-        <ul>
+        </ul>
     </div>
 
-
 <script>
-
-
     function toggleMenu() {
         var yesDiv = document.querySelector('.yes');
         yesDiv.classList.toggle('open');
-        if (yesDiv.classList.contains('open')) {
-            yesDiv.style.display = "block";
-        } else {
-            yesDiv.style.display = "none";
-        }
     }
 
-
+    document.querySelectorAll('.yes a').forEach(function(link) {
+        link.addEventListener('click', function() {
+            var yesDiv = document.querySelector('.yes');
+            yesDiv.classList.remove('open');
+        });
+    });
 </script>
 
 </body>
