@@ -35,7 +35,7 @@
     <div class="popup" id="popup">
         <img src="../images/tick.JPG">
         <h2>Thank You!</h2> 
-        <p>Your Details Were Successfully Submitted. Thanks!</p>
+        <p>If Your Details Were Successfully Submitted On Whatsapp. Thanks!</p>
         <button type="button" onclick="closePopup()">Continue With Shopping</button>
     </div>
 </div>
@@ -46,10 +46,20 @@
     function openPopup(){
         popup.classList.add("open-popup");
     }
-    function closePopup(){
-        popup.classList.remove("open-popup");
-        window.location.href = 'index.php';
-    }
+    function closePopup() {
+    // Call the reset_cart.php script
+    fetch('reset_cart.php')
+        .then(response => {
+            if (response.ok) {
+                window.location.href = 'index.php';
+            } else {
+                console.error('Failed to reset cart');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+}
 
     function sendToWhatsApp(event) {
         event.preventDefault();
