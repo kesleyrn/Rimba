@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/RimbaTradenarkt.png" type="image/x-icon">
     <title>Rimba &mdash; HighQuality</title>
-    <link rel="stylesheet" href="webcss/header2.css">
+    <link rel="stylesheet" href="webcss/header3.css">
     <style>
         .toggle-button {
             display: none;
@@ -52,7 +52,6 @@
                 width: 100%;
                 height: 100%;
                 background-color:black;
-                /* background-color: #ababab; */
                 z-index: 1000;
                 overflow-y: auto;
                 flex-direction: column;
@@ -76,10 +75,12 @@
                 margin: 20px 0;
             }
             .yes ol a {
-                color:white;
-                /* color: #ff004f; */
+                color: #ff004f;
                 font-size: 20px;
             }
+            .dropdown-content a {
+                color:black;
+            } 
             .Logo {
                 display: block;
                 margin-left: 10px;
@@ -142,7 +143,7 @@
                         <!-- <a href="mshirt.php">Shirt</a>
                         <a href="mpant.php">Pant</a>
                         <a href="mclosedshoes.php">Closed shoes</a> -->
-                        <a href="msandals.php">Sandals</a>
+                        <a href="msandals.php" class="drop">Sandals</a>
                     </div>
                 </div>
             </ol> 
@@ -169,12 +170,6 @@
         yesDiv.classList.toggle('open');
     }
 
-    document.querySelectorAll('.yes a').forEach(function(link) {
-        link.addEventListener('click', function() {
-            var yesDiv = document.querySelector('.yes');
-            yesDiv.classList.remove('open');
-        });
-    });
 </script>
 
 </body>
