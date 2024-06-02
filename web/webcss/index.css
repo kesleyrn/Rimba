@@ -1,55 +1,58 @@
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-    body{
-        line-height: 1.5;
-        font-family: 'poppins',sans-serif;
-        margin: auto;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family:'Robot,'sans-serif;
-    }
+body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+}
 
-    .container{
-        margin: auto;
-    }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
 
-   .alb{
-    width:230px;
-    height:350px;
-    padding:6px; /*replaced form 10px*/
-    display:inline-block;
+.container {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the items horizontally */
+}
+
+.alb {
+    width: 230px;
+    height: 350px;
+    padding: 6px; /*replaced from 10px*/
+    display: inline-block;
     background: rgb(236, 236, 236);
     border-radius: 8px;
-    
-  
-
+    margin: 5px; /* Added margin for spacing */
 }
 
-.alb img{
-    width:100%;
-    height:65%;
-    border-radius:6px;
-    margin-top: 5px; 
+.alb img {
+    width: 100%;
+    height: 65%;
+    border-radius: 6px;
+    margin-top: 5px;
 }
-.alb p{
-    font-size:12px;
+
+.alb p {
+    font-size: 12px;
     color: black;
     margin-left: 10px;
-  
-}
-.wel{
-    padding-left:15px;
-    padding-right:15px;
-   
-}
-.alb a{
-  text-decoration:none;
 }
 
-.btn{
+.wel {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.alb a {
+    text-decoration: none;
+}
+
+.btn {
     padding: 12px;
     position: relative;
     align-items: center;
@@ -59,94 +62,134 @@
     margin: 3px;
     color: white;
     border-radius: 5px;
-
 }
 
-.btn > a{
+.btn > a {
     color: white;
     text-decoration: none;
 }
 
-
-
-
-
-.btn2{
-    padding:8px;
+.btn2 {
+    padding: 8px;
     background: white;
-    border:none;
-    border-radius:1px;
+    border: none;
+    border-radius: 1px;
     cursor: pointer;
-    font-weight:600;
-    border:1px solid  #e91e63;
-    width:40%;
-
-}
-.btn2:hover{
-    transition:all 0.5s ease-in-out;
-    background:#e91e63;
-    color:white;
-    
+    font-weight: 600;
+    border: 1px solid #e91e63;
+    width: 40%;
 }
 
-.btn1{
-    padding:8px;
+.btn2:hover {
+    transition: all 0.5s ease-in-out;
+    background: #e91e63;
+    color: white;
+}
+
+.btn1 {
+    padding: 8px;
     background: rgba(0, 0, 0, 0.816);
     color: white;
-    border-radius:1px;
+    border-radius: 1px;
     cursor: pointer;
-    font-weight:600;
-    border:1px solid  black;
-    width:40%;
-
-}
-.btn1:hover{
-    transition:all 0.5s ease-in-out;
-    background:rgb(255, 254, 254);
-    color:#000000;
-    
+    font-weight: 600;
+    border: 1px solid black;
+    width: 40%;
 }
 
-.webimg img{
-   width:98%;
-   height:50vh;
-   margin-left: 10px;
-   margin-bottom: 10px;
-   border-radius: 2px;
+.btn1:hover {
+    transition: all 0.5s ease-in-out;
+    background: rgb(255, 254, 254);
+    color: #000000;
 }
 
-    /* media query for small screen */
-    @media screen and (max-width: 768px) {
-        .container{
-            align-items: center;
-            justify-content: center;
-        }
-        .alb{
-            width:170px;
-            height:250px;
-            margin-left: 10px;
-        }
-        .alb p{
-            font-size:8px;
-            color: black;
-            margin-left: 5px;
-          
-        }
-        .btn1{
-            padding:2px;
-            font-weight:50;
-            width:40%;
-        
-        }
-        .btn2{
-            padding:2px;
-            border-radius:1px;
-            font-weight:50;
-            width:40%;
-        
-        }
-        .btn{
-            padding: 8px;
-        }
+.webimg img {
+    width: 98%;
+    height: 50vh;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+/* media query for small screens */
+@media screen and (max-width: 768px) {
+    .container {
+        align-items: center;
+        justify-content: center;
+    }
+    .alb {
+        width: 170px;
+        height: 250px;
+    }
+    .alb p {
+        font-size: 8px;
+        color: black;
+        margin-left: 5px;
+    }
+    .btn1 {
+        padding: 2px;
+        font-weight: 50;
+        width: 40%;
+    }
+    .btn2 {
+        padding: 2px;
+        border-radius: 1px;
+        font-weight: 50;
+        width: 40%;
+    }
+    .btn {
+        padding: 8px;
+    }
+}
+
+/* media query for very small screens (max width 365px) */
+@media screen and (max-width: 365px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .alb {
+        width: 45%; /* Adjusted width to fit two items in one line */
+        height: auto;
        
     }
+    .alb p {
+        font-size: 8px; /* Adjust font size if necessary */
+        margin-left: 5px;
+    }
+    .btn1, .btn2 {
+        padding: 2px;
+        font-weight: 50;
+        width: 40%;
+    }
+    .btn {
+        padding: 8px;
+    }
+}
+
+/* media query for medium screens (between 365px and 768px) */
+@media screen and (min-width: 366px) and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .alb {
+        width: 45%; /* Adjusted width to fit two items in one line */
+        height: auto;
+       
+    }
+    .alb p {
+        font-size: 10px; /* Adjust font size if necessary */
+        margin-left: 5px;
+    }
+    .btn1, .btn2 {
+        padding: 5px;
+        font-weight: 50;
+        width: 40%;
+    }
+    .btn {
+        padding: 8px;
+    }
+}
