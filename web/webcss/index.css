@@ -111,6 +111,14 @@ body {
     border-radius: 2px;
 }
 
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the pagination buttons horizontally */
+    margin: 20px 0; /* Adds some space above and below the pagination buttons */
+    flex-wrap: wrap; /* Allows the buttons to wrap to the next line if needed */
+}
+
 /* media query for small screens */
 @media screen and (max-width: 768px) {
     .container {
@@ -120,6 +128,10 @@ body {
     .alb {
         width: 170px;
         height: 250px;
+    }
+    .alb img{
+        width: 100%;
+        height: 70%;
     }
     .alb p {
         font-size: 8px;
@@ -151,8 +163,12 @@ body {
     }
     .alb {
         width: 45%; /* Adjusted width to fit two items in one line */
-        height: auto;
+        height: 320px;
        
+    }
+    .alb img{
+        width: 100%;
+        /* height: 200px; */
     }
     .alb p {
         font-size: 8px; /* Adjust font size if necessary */
@@ -168,8 +184,10 @@ body {
     }
 }
 
-/* media query for medium screens (between 365px and 768px) */
-@media screen and (min-width: 366px) and (max-width: 768px) {
+
+
+
+@media screen and (min-width: 366px) and (max-width: 540px) {
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -177,19 +195,59 @@ body {
     }
     .alb {
         width: 45%; /* Adjusted width to fit two items in one line */
-        height: auto;
+        height: 320px;
        
     }
+    .alb img{
+        width: 100%;
+        height: 70%;
+    }
+}
+
+
+
+/* media query for medium screens (between 365px and 768px) */
+@media screen and (min-width: 650px) and (max-width: 670px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .alb {
+        width: 45%; /* Adjusted width to fit two items in one line */
+        height: 450px;
+       
+    }
+    .alb img{
+        width: 100%;
+        height: 70%;
+    }
     .alb p {
-        font-size: 10px; /* Adjust font size if necessary */
+        font-size: 15px; /* Adjust font size if necessary */
         margin-left: 5px;
     }
     .btn1, .btn2 {
-        padding: 5px;
+        /* padding: 5px; */
         font-weight: 50;
         width: 40%;
     }
     .btn {
         padding: 8px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 670px) and (max-width: 768px) {
+
+    .alb {
+        width: 45%; /* Adjusted width to fit two items in one line */
+        height: 520px;
+       
+    }
+    .alb p {
+        font-size: 18px; /* Adjust font size if necessary */
+        margin-left: 5px;
     }
 }

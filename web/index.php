@@ -11,7 +11,7 @@ include "indexheader.php";
 </head>
 <body>
   <div class="container">
-    <h2>RimbaShop Trends >></h2>
+    <!-- <h2>RimbaShop Trends >></h2> -->
     <?php
     include "../connection.php";
 
@@ -55,16 +55,21 @@ include "indexheader.php";
         <?php   
         }
     }
-
+    ?>
+  </div>
+  
+  <!-- Pagination buttons container -->
+  <div class="pagination">
+    <?php
     // Creating pagination buttons
     for($btn = 1; $btn <= $totalPages; $btn++){
         echo '<button class="btn"><a href="index.php?page=' . $btn . '">' . $btn . '</a></button>';
     }
     ?>
   </div>
+  
+  <?php
+  include "../web/footer.php";
+  ?>
 </body>
 </html>
-
-<?php
-include "../web/footer.php";
-?>
