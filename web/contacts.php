@@ -25,8 +25,8 @@ include "header.php"
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Us</h1>
-                <p><i class="fas fa-paper-plane"></i>Rimba@gmail.com</p>
-                <p><i class="fas fa-phone-square-alt"></i>+1 6377384384</p>
+                <p><i class="fas fa-paper-plane"></i>hello@rimbashop.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+250 787888596/+250 734594179</p>
                 <div class="social-icons">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fa-brands fa-x-twitter"></i></a>

@@ -10,7 +10,7 @@
 </head>
 <body>
     <footer class="footer">
-        <div class="container">
+        <div class="containers">
             <div class="row">
                 <div class="footer-col">
                     <h4>Campany</h4>

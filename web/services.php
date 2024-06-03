@@ -41,7 +41,7 @@ include "header.php"
                 For any inquiries or assistance, feel free to contact us:
 
                 Phone: 0787888596
-                Email: shop@rimbashop.com</p>
+                Email: hello@rimbashop.com</p>
         </section>
 
     </div>

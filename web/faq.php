@@ -40,10 +40,10 @@ include "header.php"
                     Yes, we do offer customization and personalization options for our shoes. You can explore our customization section on the website to choose specific colors, materials, and even add personalized details to create a unique pair of shoes tailored to your preferences. <br><br>
 
             <b> 9.  How can I contact your customer service?</b><br>
-                    You can contact our customer service through the "Contact Us" page on our website or by emailing (email:……….). <br><br>
+                    You can contact our customer service through the "Contact Us" page on our website or by emailing (email:hello@rimbashop.com). <br><br>
 
             <b> 10. Do you have a physical store I can visit?</b><br>
-                    Yes, we do have a physical store that you can visit! In addition to our online presence, you can find our retail location at ( the address:……). We welcome customers to explore our products in person and receive personalized assistance from our dedicated staff. <br><br>
+                    Yes, we do have a physical store that you can visit! In addition to our online presence, you can find our retail location at ( the address:KABC KN 5 RD). We welcome customers to explore our products in person and receive personalized assistance from our dedicated staff. <br><br>
     
             <b> 11. Can I change my shipping address after placing an order?</b><br>
                     Unfortunately, we cannot change the shipping address once an order is placed. Please verify your address before completing the purchase. <br><br>
@@ -55,7 +55,7 @@ include "header.php"
                     Yes, we offer wholesale and bulk purchasing options. Contact our wholesale department for more information. <br><br>
 
             <b> 14. How do I voice my feedback on any service given to me?</b><br>
-                    We welcome your feedback! You can submit your comments and suggestions through our "Contact Us" page or by emailing (email:……….). <br><br>
+                    We welcome your feedback! You can submit your comments and suggestions through our "Contact Us" page or by emailing (email:hello@rimbashop.com). <br><br>
 
 
             </p>
