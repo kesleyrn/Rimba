@@ -1,9 +1,12 @@
 
     /**footer session**/
     .container{
-        max-width: 1170px;
+        max-width: 1500px;
         margin: auto;
         padding-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
      
     }
 
@@ -23,8 +26,8 @@
     }
 
     .footer-col{
-        width: 25%;
-        padding: 4px;
+        /* width: 25%; */
+        padding: 50px;
     }
 
     .footer-col h4{
