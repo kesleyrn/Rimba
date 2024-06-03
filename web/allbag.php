@@ -63,15 +63,22 @@ include "header.php";
             }
         }
 
-        // Creating pagination buttons
-        for($btn = 1; $btn <= $totalPages; $btn++){
-            echo '<button class="btn"><a href="allbag.php?page=' . $btn . '">' . $btn . '</a></button>';
-        }
         ?>
         </div>
-        </body>
-        </html>
-
+        
+        <!-- Pagination buttons container -->
+        <div class="pagination">
+          <?php
+          // Creating pagination buttons
+          for($btn = 1; $btn <= $totalPages; $btn++){
+              echo '<button class="btn"><a href="allbag.php?page=' . $btn . '">' . $btn . '</a></button>';
+          }
+          ?>
+        </div>
+        
         <?php
         include "../web/footer.php";
         ?>
+      </body>
+      </html>
+      

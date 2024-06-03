@@ -62,16 +62,22 @@ include "header.php";
         <?php   
             }
         }
-
-        // Creating pagination buttons
-        for($btn = 1; $btn <= $totalPages; $btn++){
-            echo '<button class="btn"><a href="wdress.php?page=' . $btn . '">' . $btn . '</a></button>';
-        }
         ?>
-    </div>    
-</body>
-</html>
-
-<?php
-include "../web/footer.php";
-?>
+        </div>
+        
+        <!-- Pagination buttons container -->
+        <div class="pagination">
+          <?php
+          // Creating pagination buttons
+          for($btn = 1; $btn <= $totalPages; $btn++){
+              echo '<button class="btn"><a href="wdress.php?page=' . $btn . '">' . $btn . '</a></button>';
+          }
+          ?>
+        </div>
+        
+        <?php
+        include "../web/footer.php";
+        ?>
+      </body>
+      </html>
+      
