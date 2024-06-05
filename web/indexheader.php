@@ -165,7 +165,7 @@
     </div>
 
     <div class="trends">
-        <img src="../images/DiscountUpdated.jpg" id="trendsImage">
+        <img src="../images/Hotsales2.jpg" id="trendsImage">
         <div class="trends-buttons">
             <button onclick="prevImage()"><i class="fas fa-chevron-left" style="font-size: 70px;"></i></button>
             <button onclick="nextImage()"><i class="fas fa-chevron-right" style="font-size: 70px;"></i></button>
@@ -174,9 +174,8 @@
 
 <script>
     var images = [
-        '../images/Hotsales.jpg',
-        '../images/Shineyourfeet.jpg',
-        '../images/DiscountUpdated.jpg',
+        '../images/Hotsales2.jpg',
+        '../images/Shineyourfeet1.jpg',
     ];
     var currentImageIndex = 0;
     var trendsImage = document.getElementById('trendsImage');

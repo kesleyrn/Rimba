@@ -46,8 +46,8 @@
                     <h4>follow us</h4>
                     <div class="social-links">
                    
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <!-- <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a> -->
                         <a href="https://www.instagram.com/rimbaquality/"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 
@@ -60,7 +60,7 @@
 <style>
       @media screen and (max-width: 768px) {
 
-        .container{
+        .containers{
         max-width: 1800px;
        
      
