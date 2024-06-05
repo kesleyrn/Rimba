@@ -71,7 +71,7 @@
         const message = document.getElementById("Message").value;
 
         const whatsappMessage = `Full Names: ${names}%0AEmail: ${email}%0ALocation: ${location}%0APhone Number: ${phone}%0AOrder Message: ${message}`;
-        const whatsappUrl = `https://wa.me/788601886?text=${whatsappMessage}`;
+        const whatsappUrl = `https://wa.me/787888596?text=${whatsappMessage}`;
 
         window.open(whatsappUrl, '_blank');
 
