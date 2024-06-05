@@ -81,10 +81,7 @@
             .dropdown-content a {
                 color: black;
             } 
-            .Logo {
-                display: block;
-                margin-left: 10px;
-            }
+
             .trends {
                 padding-top: 10px;
             }
@@ -113,7 +110,7 @@
 
 <div class="menu" style="height: 4rem;">
     <div class="navbar">
-        <a href="./index.php" class="Logo"><img src="../images/RimbaLogoB.png" style="width: 6rem;height: 90px; position:relative; top:8px; left:40px;"></a> 
+        <a href="./index.php" class="Logo"><img src="../images/RimbaLogoB.png" style="width: 6rem;height: 90px; position:relative; top:8px;"></a> 
         <button class="toggle-button" onclick="toggleMenu()">
             <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
