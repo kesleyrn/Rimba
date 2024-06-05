@@ -67,9 +67,10 @@ include "indexheader.php";
     }
     ?>
   </div>
-  
-  <?php
-  include "../web/footer.php";
-  ?>
+
 </body>
 </html>
+  
+  <?php
+  include "footer.php";
+  ?>

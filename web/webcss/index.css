@@ -20,6 +20,19 @@ body {
     flex-wrap: wrap;
     justify-content: center; /* Centers the items horizontally */
 }
+.Hu{
+    color: #e91e63;
+    font-size: 2px;
+}
+.Heading{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #000000;
+}
 
 .alb {
     width: 230px;
@@ -126,6 +139,11 @@ body {
         align-items: center;
         justify-content: center;
     }
+    .Heading{
+
+        font-size: 15px;
+        margin-top: 30px;
+    }
     .alb {
         width: 170px;
         height: 250px;
@@ -162,6 +180,10 @@ body {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .Heading{
+        font-size: 15px;
+        margin-top: 30px;
+    }
     .alb {
         width: 45%; /* Adjusted width to fit two items in one line */
         height: 320px;
@@ -194,6 +216,10 @@ body {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .Heading{
+        font-size: 15px;
+        margin-top: 30px;
+    }
     .alb {
         width: 45%; /* Adjusted width to fit two items in one line */
         height: 320px;
@@ -213,6 +239,10 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .Heading{
+        font-size: 15px;
+        margin-top: 30px;
     }
     .alb {
         width: 45%; /* Adjusted width to fit two items in one line */

@@ -32,8 +32,8 @@
                 <div class="footer-col">
                     <h4>online shop</h4>
                     <ul>
-                        <li><a href="wsandals.php">Men Sandals</a></li>
-                        <li><a href="msandals.php">Women Sandals</a></li>
+                        <li><a href="wsandals.php">Women Sandals</a></li>
+                        <li><a href="msandals.php">Men Sandals</a></li>
                         <li><a href="#">Blog</a></li>
                         <!-- <li><a href="allbag.php">bag</a></li> 
                         <li><a href="allshoes.php">shoes</a></li>

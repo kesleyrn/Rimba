@@ -10,6 +10,7 @@ include "header.php";
     <link rel="stylesheet" href="webcss/index.css">
 </head>
 <body>
+<u class="Hu"><p class="Heading">All Sandals</p></u>
    <div class="container">
         <?php
         include "../connection.php";
