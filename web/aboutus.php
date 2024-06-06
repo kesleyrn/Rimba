@@ -12,7 +12,7 @@ include "header.php";
 <body>
     <div class="contain">
         <section>
-        <h2>About Us</h2><hr>
+        <u class="Hu"><p class="Heading">About Us</p></u>
         <p class ="pragraph"> 
 
             Welcome to Rimba Shop, your go-to destination for stylish footwear and accessories! At Rimba Shop, we take pride in curating a diverse collection of products, including sandals, classic shoes for men, and leather belts. <br><br>

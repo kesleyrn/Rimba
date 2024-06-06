@@ -12,8 +12,8 @@ include "header.php"
 </head>
 <body>
     <div class="contain">
-        <h2>Privacy policy</h2><hr>
         <section>
+        <u class="Hu"><p class="Heading">Privacy Policy</p></u>
             <p class ="pragraph">
 
             Your privacy is important to Rimba Shop and always has been. So, we've developed a Privacy Policy that covers how we collect, use, disclose, transfer, and store your information. Please take a moment to familiarize yourself with our privacy practices and let us know if you have any questions. <br>

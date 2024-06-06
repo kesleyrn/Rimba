@@ -10,24 +10,22 @@ body{
     box-sizing: border-box;
     font-family:'Robot,'sans-serif;
 }
-
 .contain{
-    padding-left: 200px;
+    padding: 25px 0px 0 20px;
+ }
+
+ .Hu{
+    color: #e91e63;
+    font-size: 2px;
 }
-/* for footer only */
-.container{
-    padding-left: 140px;
-}
-h2{
+.Heading{
+    position: relative;
     display: flex;
-    
-}
-hr{
-    width: 160px;
-    height: 3px;
-    background-color: #ff004f;
-    border: none;
-    margin-bottom: 30px;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #000000;
 }
 
 section{
@@ -40,14 +38,13 @@ section{
  /* media query for small screen */
  @media screen and (max-width: 768px) {
     .contain{
-       padding-left: 40px;
+        padding: 15px 0px 0 10px;
+     }
+    section{
+        margin-top:50px;
     }
-    /* for footer only */
-.container{
-    padding-left: 0;
-}
     .pragraph{
-        width: 90%;
+        width: 100%;
     }
 
 }

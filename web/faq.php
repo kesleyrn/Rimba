@@ -12,8 +12,8 @@ include "header.php"
 </head>
 <body>
     <div class="contain">
-    <h2>FAQ</h2><hr>
         <section>
+        <u class="Hu"><p class="Heading">FAQ</p></u>
             <p class ="pragraph">
             <b>  1.  How do I place an order on your website? </b><br>
                     To place an order, simply browse our website, select the desired items, and proceed to the checkout. Follow the prompts to enter your shipping details and complete the purchase. <br><br>

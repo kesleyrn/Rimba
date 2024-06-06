@@ -12,8 +12,8 @@ include "header.php"
 </head>
 <body>
     <div class="contain">
-        <h2>Our Services</h2><hr>
         <section>
+        <u class="Hu"><p class="Heading">Our Services</p></u>
             <p class ="pragraph">
                 Product Diversity: Explore a wide range of products, from trendy sandals to sophisticated leather belts, carefully selected to suit every style and occasion.
 
