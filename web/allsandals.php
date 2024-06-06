@@ -44,9 +44,9 @@ include "header.php";
             while($row = mysqli_fetch_assoc($result)){ ?>
                 <div class="alb">
                     <img src="../uploads/<?= $row['image_url'];?>">
-                    <p>Brand: &nbsp;<?php echo $row['Cname'];?> <br></p>
+                    <p>Name: &nbsp;<?php echo $row['Cname'];?> <br></p>
                     <p>Gender: &nbsp;<?php echo $row['Gender'];?><br></p>
-                    <p>Product name: &nbsp;<?php echo $row['Product_name'];?><br></p>
+                    <p>Product: &nbsp;<?php echo $row['Product_name'];?><br></p>
                     <p>Amount: &nbsp;<b><?php echo $row['Amount'];?>&nbsp;FRW </b><br>
                 
 
