@@ -10,8 +10,8 @@ include "indexheader.php";
     <link rel="stylesheet" href="./webcss/index.css">
 </head>
 <body>
+<u class="Hu"><p class="Heading">Trends:</p></u>
   <div class="container">
-    <!-- <h2>RimbaShop Trends >></h2> -->
     <?php
     include "../connection.php";
 

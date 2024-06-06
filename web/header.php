@@ -158,8 +158,8 @@
                     </div>
                 </div>
             </ol>
-            <ol><a href="product.php">Products</a></ol>
-            <ol><a href="collection.php">Collections</a></ol>
+            <!-- <ol><a href="product.php">Products</a></ol>
+            <ol><a href="collection.php">Collections</a></ol> -->
             <ol><a href="contacts.php">Contact</a></ol>
         </ul>
     </div>

@@ -17,7 +17,7 @@
                     <ul>
                         <li><a href="aboutus.php">About us</a></li>
                         <li><a href="services.php">Our services</a></li>
-                        <li><a href="privacy.php">Privacy policy</a></li>
+
                        
                     </ul>
                 </div>
@@ -25,16 +25,16 @@
                     <h4>get help</h4>
                     <ul>
                         <li><a href="faq.php">FAQ</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">payment optios</a></li>
+                        <li><a href="privacy.php">Privacy policy</a></li>
+                        <!-- <li><a href="#">payment optios</a></li> -->
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>online shop</h4>
                     <ul>
-                        <li><a href="wsandals.php">Women Sandals</a></li>
-                        <li><a href="msandals.php">Men Sandals</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="wsandals.php">Women Sandal</a></li>
+                        <li><a href="msandals.php">Men Sandal</a></li>
+                        <!-- <li><a href="#">Blog</a></li> -->
                         <!-- <li><a href="allbag.php">bag</a></li> 
                         <li><a href="allshoes.php">shoes</a></li>
                         <li><a href="alldress.php">dress</a></li>

@@ -14,6 +14,7 @@
         .trends {
             width: 100%;
             margin: auto;
+            height:32rem;
         }
         .trends img {
             height: 30rem;
@@ -84,6 +85,7 @@
 
             .trends {
                 padding-top: 10px;
+                height: 10rem;
             }
             .trends img {
                 height: 10rem;
@@ -155,8 +157,8 @@
                     </div>
                 </div>
             </ol>
-            <ol><a href="product.php">Products</a></ol>
-            <ol><a href="collection.php">Collections</a></ol>
+            <!-- <ol><a href="product.php">Products</a></ol>
+            <ol><a href="collection.php">Collections</a></ol> -->
             <ol><a href="contacts.php">Contact</a></ol>
         </ul>
     </div>
