@@ -36,7 +36,7 @@ body {
 
 .alb {
     width: 230px;
-    height: 350px;
+    height: 450px;
     padding: 6px; /*replaced from 10px*/
     display: inline-block;
     background: rgb(236, 236, 236);
@@ -46,7 +46,7 @@ body {
 
 .alb img {
     width: 100%;
-    height: 65%;
+    height: 70%;
     border-radius: 6px;
     margin-top: 5px;
 }
@@ -191,7 +191,7 @@ body {
     }
     .alb img{
         width: 100%;
-        /* height: 200px; */
+        height: 70%;
     }
     .alb p {
         font-size: 8px; /* Adjust font size if necessary */
@@ -221,7 +221,7 @@ body {
         margin-top: 30px;
     }
     .alb {
-        width: 45%; /* Adjusted width to fit two items in one line */
+        width: 30%; /* Adjusted width to fit two items in one line */
         height: 320px;
        
     }
@@ -273,8 +273,8 @@ body {
 @media screen and (min-width: 670px) and (max-width: 768px) {
 
     .alb {
-        width: 45%; /* Adjusted width to fit two items in one line */
-        height: 520px;
+        width: 30%; /* Adjusted width to fit two items in one line */
+        height: 500px;
        
     }
     .alb p {
