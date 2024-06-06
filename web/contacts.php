@@ -8,13 +8,6 @@ include "header.php"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rimba</title>
     <link rel="stylesheet" href="webcss/contact.css">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script type="text/javascript">
-            (function(){
-               emailjs.init("JEke8Pncrhz6FKrPM");
-            })();
-         </script>
 
 </head>
 <body>
@@ -39,11 +32,11 @@ include "header.php"
 
             <div class="contact-right">
                 <h2>Message Us</h2>
-                <form class="send">
-                    <input type="text"  id="Name" placeholder="Enter your name" required>
+                <form class="send"  onsubmit="sendToWhatsAp(event)">
+                    <input type="text"  id="Names" placeholder="Enter your names" required>
                     <input type="email"  id="Email" placeholder="Enter your Email" required>
                     <textarea id="Message" rows="6" placeholder="Enter your Message" required></textarea>
-                    <button type="submit" class="btn btn2" onclick="sendMail()">Submit</button>
+                    <button type="submit" class="btn btn2">Submit</button>
                 </form>
 
             </div>
@@ -97,7 +90,21 @@ include "header.php"
         }
 
     </style>
-<script src="./script.js"></script>
+        <script>
+                function sendToWhatsAp(event) {
+                    event.preventDefault();
+
+                    const names = document.getElementById("Names").value;
+                    const email = document.getElementById("Email").value;
+                    const message = document.getElementById("Message").value;
+
+                    const whatsappMessage = `Full Names: ${names}%0AEmail: ${email}%0AMessage ToSend: ${message}`;
+                    const whatsappUrl = `https://wa.me/787888596?text=${whatsappMessage}`;
+
+                    window.open(whatsappUrl, '_blank');
+
+    }
+        </script>
 </body>
 </html>
 <?php
