@@ -14,14 +14,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product_id'])) {
     }
 
     // Redirect back to the cart page after removing the item
-    header("Location: cart_page.php");
+    header("Location: ../Pages/cart_page.php");
     exit();
 } else {
     // Handle invalid requests or no product ID provided
     // Redirect or display an error message
     // You may also include a redirect to the cart page if needed
     echo "Invalid request or missing product ID";
-    header("Location: cart_page.php");
+    header("Location: ../Pages/cart_page.php");
     exit();
 }
 ?>

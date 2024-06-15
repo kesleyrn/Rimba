@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     // Show JavaScript alert and confirm with the user
                     echo '<script>
                     alert("Item added to cart!");
-                    window.location.href = "index.php"; // Redirect to the desired page after alert
+                    window.location.href = "../Pages/index.php"; // Redirect to the desired page after alert
                  </script>';
                 exit();
            
@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }else{
     echo '<script>
     alert("There is problem on adding item to cart!");
-    window.location.href = "index.php"; // Redirect to the desired page after alert
+    window.location.href = "../Pages/index.php"; // Redirect to the desired page after alert
  </script>';
 exit();
 }
@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     // Show JavaScript alert and confirm with the user
                     echo '<script>
                     // alert("Item added to cart!");
-                    window.location.href = "cart_page.php"; // Redirect to the desired page after alert
+                    window.location.href = "../Pages/cart_page.php"; // Redirect to the desired page after alert
                  </script>';
                 exit();
            
@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }else{
     echo '<script>
     alert("There is problem on adding item to cart!");
-    window.location.href = "index.php"; // Redirect to the desired page after alert
+    window.location.href = "../Pages/index.php"; // Redirect to the desired page after alert
  </script>';
 exit();
 }

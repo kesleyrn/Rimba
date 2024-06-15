@@ -1,5 +1,5 @@
 <?php
-include "header.php";
+include "../../web/Pages/header.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,13 +7,13 @@ include "header.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rimba</title>
-    <link rel="stylesheet" href="webcss/index.css">
+    <link rel="stylesheet" href="../webcss/index.css">
 </head>
 <body>
-<u class="Hu"><p class="Heading">Men Shirts</p></u>
-   <div class="container">
+<u class="Hu"><p class="Heading">Women Closed Shoes</p></u>
+    <div class="container">
         <?php
-        include "../connection.php";
+        include "../../connection.php";
 
         $numberPerPage = 10; // Records to display per page
 
@@ -37,20 +37,20 @@ include "header.php";
         $startingLimit = ($page - 1) * $numberPerPage;
 
         // Fetch records for the current page
-        $sql = "SELECT * FROM `products` WHERE Product_name = 'Shirt' AND Gender = 'Male' ORDER BY id DESC LIMIT $startingLimit, $numberPerPage";
+        $sql = "SELECT * FROM `products` WHERE Product_name = 'Closed Shoes' AND Gender = 'Female' ORDER BY id DESC LIMIT $startingLimit, $numberPerPage";
         $result = mysqli_query($conn, $sql);
 
         if(mysqli_num_rows($result) > 0){
             while($row = mysqli_fetch_assoc($result)){ ?>
                 <div class="alb">
-                    <img src="../uploads/<?= $row['image_url'];?>">
+                    <img src="../../uploads/<?= $row['image_url'];?>">
                     <p>Name: &nbsp;<?php echo $row['Cname'];?> <br></p>
                     <p>Gender: &nbsp;<?php echo $row['Gender'];?><br></p>
                     <p>Product: &nbsp;<?php echo $row['Product_name'];?><br></p>
                     <p>Amount: &nbsp;<b><?php echo $row['Amount'];?>&nbsp;FRW </b><br>
                 
 
-                    <form method="POST" action="cart_handler.php"> 
+                    <form method="POST" action="../Components/cart_handler.php"> 
                         <input type="hidden" name="product_id" value="<?php echo $row['id']; ?>">
                         <button class="btn1" type="submit" name="buy_now">Buy now</button> &nbsp;
                         <button class="btn2" type="submit" name="add_to_cart">+Cart</button>
@@ -71,13 +71,13 @@ include "header.php";
           <?php
           // Creating pagination buttons
           for($btn = 1; $btn <= $totalPages; $btn++){
-              echo '<button class="btn"><a href="mshirt.php?page=' . $btn . '">' . $btn . '</a></button>';
+              echo '<button class="btn"><a href="wclosedshoes.php?page=' . $btn . '">' . $btn . '</a></button>';
           }
           ?>
         </div>
         
         <?php
-        include "../web/footer.php";
+        include "../../web/Pages/footer.php";
         ?>
       </body>
       </html>

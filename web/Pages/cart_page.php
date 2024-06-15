@@ -4,7 +4,7 @@ include "header.php";
 // Check if 'cart' session variable is set and not empty
 if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
     // Assuming you have a connection to your database
-    include "../connection.php";
+    include "../../connection.php";
 
     // Function to get product details from the database based on the product ID
     function getProductDetails($conn, $productId)
@@ -240,7 +240,7 @@ if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
 
             if ($productDetails) {
                 echo '<tr>';
-                echo '<td class="img"><img src="../uploads/' . $productDetails['image_url'] . '" alt="Product Image" style="width: 200px; height: 200px; border-radius:4px;"></td>';
+                echo '<td class="img"><img src="../../uploads/' . $productDetails['image_url'] . '" alt="Product Image" style="width: 200px; height: 200px; border-radius:4px;"></td>';
                 
                 // Details column displaying Cname, Gender, Product Name, and Amount
                 echo '<td class="td">';
@@ -255,7 +255,7 @@ if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
                 
                 // Add remove item button in a form
                 echo '<td class="td">';
-                echo '<form method="post" action="remove_item.php">';
+                echo '<form method="post" action="../Components/remove_item.php">';
                 echo '<input type="hidden" name="product_id" value="' . $productId . '">';
                 echo '<button type="submit" name="remove_item" class="btn3">Remove Item</button>';
                 echo '</form>';
@@ -307,7 +307,7 @@ if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
     ?>
         <div class="footer-wrapper">
             <?php 
-            //    include "../web/footer.php"; 
+            //    include "footer.php"; 
             ?>
         </div>
     </div>

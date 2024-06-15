@@ -7,13 +7,13 @@ include "indexheader.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rimba</title>
-    <link rel="stylesheet" href="./webcss/index.css">
+    <link rel="stylesheet" href="../webcss/index.css">
 </head>
 <body>
 <u class="Hu"><p class="Heading">Trends:</p></u>
   <div class="container">
     <?php
-    include "../connection.php";
+    include "../../connection.php";
 
     $numberPerPage = 20; // Records to display per page
 
@@ -39,13 +39,13 @@ include "indexheader.php";
     if(mysqli_num_rows($result) > 0){
         while($row = mysqli_fetch_assoc($result)){ ?>
             <div class="alb">
-                <img src="../uploads/<?= $row['image_url'];?>">
+                <img src="../../uploads/<?= $row['image_url'];?>">
                 <p>Brand: &nbsp;<?php echo $row['Cname'];?> <br></p>
                 <p>Gender: &nbsp;<?php echo $row['Gender'];?><br></p>
                 <p>Product name: &nbsp;<?php echo $row['Product_name'];?><br></p>
                 <p>Amount: &nbsp;<b><?php echo $row['Amount'];?>&nbsp;FRW </b><br>
             
-                <form method="POST" action="cart_handler.php"> 
+                <form method="POST" action="../Components/cart_handler.php"> 
                     <input type="hidden" name="product_id" value="<?php echo $row['id']; ?>">  &nbsp; 
                     <button class="btn1" type="submit" name="buy_now">Buy now</button> &nbsp;
                     <button class="btn2" type="submit" name="add_to_cart">+Cart</button>

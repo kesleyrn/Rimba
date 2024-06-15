@@ -11,7 +11,7 @@
         <button class="btn" type="submit" onclick="openPopup()">Submit</button>
   
         <div class="popup" id="popup">
-          <img src="../images/tick.JPG">
+          <img src="../../images/tick.JPG">
             <h2>Thank You!</h2> 
             <p>your Details Was Successfully Submitted. Thanks!</p>
             <button type="button"  onclick="closePopup()">OK</button>

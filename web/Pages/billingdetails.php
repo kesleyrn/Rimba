@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../images/RimbaTradenarkt.png" type="image/x-icon">
+    <link rel="icon" href="../../images/RimbaTradenarkt.png" type="image/x-icon">
     <title>Rimba &mdash; Shop</title>
 </head>
 <body>
@@ -33,7 +33,7 @@
 
 <div class="container2">
     <div class="popup" id="popup">
-        <img src="../images/tick.JPG">
+        <img src="../../images/tick.JPG">
         <h2>Thank You!</h2> 
         <p>If Your Details Were Successfully Submitted On Whatsapp. Thanks!</p>
         <button type="button" onclick="closePopup()">Continue With Shopping</button>
@@ -48,10 +48,10 @@
     }
     function closePopup() {
     // Call the reset_cart.php script
-    fetch('reset_cart.php')
+    fetch('../Components/reset_cart.php')
         .then(response => {
             if (response.ok) {
-                window.location.href = 'index.php';
+                window.location.href ='../Pages/index.php';
             } else {
                 console.error('Failed to reset cart');
             }
